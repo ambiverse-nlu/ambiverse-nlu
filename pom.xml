@@ -13,7 +13,7 @@
         <url>https://github.com/ambiverse-nlu/ambiverse-nlu</url>
         <connection>scm:git:git://github.com/ambiverse-nlu/ambiverse-nlu.git</connection>
         <developerConnection>scm:git:git@github.com:ambiverse-nlu/ambiverse-nlu.git</developerConnection>
-        <tag>ambiversenlu-1.0.0</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
