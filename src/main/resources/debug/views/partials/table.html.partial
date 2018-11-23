@@ -1,0 +1,22 @@
+<table id="##ID##" class="table table-striped">
+<thead data-toggle="tooltip" data-placement="top" title="TIP! Sort multiple columns simultaneously by holding down the shift key and clicking a second, third or even fourth column header!">
+##THEAD##
+</thead>
+<tbody>
+##TBODY##
+</tbody>
+</table>
+<script>
+    jQuery(document).ready(function () {
+         jQuery('###ID##').DataTable({
+            'iDisplayLength': 50,
+            'order': [[ 0, 'asc' ]]
+         });
+
+         jQuery('###ID## td.spot').each(function(){
+             var value = parseFloat(jQuery(this).text());
+             jQuery(this).css('background-color',getColorForPercentage(parseFloat(jQuery(this).text())));
+
+          });
+     });
+</script>

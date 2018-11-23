@@ -1,0 +1,16 @@
+<div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title" id="document-title">##DOCUMENT_ID##</h5>
+        <p class="card-text">##DOCUMENT_CONF_TABLE##</p>
+      </div>
+    </div>
+    <br />
+    <div>
+        <button class="btn btn-primary pull-right" style="margin-bottom: 20px" id="download">Download</button>
+
+       <div id="annotations" class="prettyprint">
+        ##ANNOTATED_CONTENT##
+       </div>
+    </div>
+</div>

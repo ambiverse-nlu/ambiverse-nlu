@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Overview</h5>
+        <p class="card-text">The overview od all configurations goes here.</p>
+      </div>
+    </div>
+    <br />
+    <div>
+        <h3>All documents</h3>
+        ##TABLE##
+    </div>
+</div>

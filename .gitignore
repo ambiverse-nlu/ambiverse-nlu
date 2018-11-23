@@ -1,0 +1,10 @@
+.project
+.classpath
+.settings
+.idea
+*.iml
+*.cache
+*.log*
+target/
+
+*.pyc

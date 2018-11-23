@@ -1,0 +1,107 @@
+	<yagoTheme_mentionLikelihoodFacts_en>	<hasGloss>	"This file is part of the ontology YAGO3. It is licensed under a Creative-Commons Attribution License by the YAGO team at the Max Planck Institute for Informatics/Germany. See http://yago-knowledge.org for all details. This file was generated on 2017-04-26 T 13:54:04.0341. Mention link likelihoods estimated by counting how often a mention occurs linked vs. occurs overall (by article). INTERNAL"	
+<id_1ovskzi_1ia_zilgqd>	<Cambridge_Theological_Federation>	rdfs:label	"CTF"@eng
+<id_1mufyju_1ia_zk289r>	<Quid_(encyclopedia)>	rdfs:label	"Quid"@deu	
+<id_M?a9uWMyOa_?RG_wOT!9Cb3YS>	<Skënder_Muço>	<hasGivenName>	"Skënder"@eng
+<id_6M9nDxKEYA_?RG_mAILlBvXFh>	<de/Bertilio_Caneva>	<hasGivenName>	"Bertilio"@deu
+<id_71UZDGiQwX_ukZ_QyeJ?HMkqV>	<Margarethe_Siems>	<hasFamilyName>	"Siems"@eng
+<id_37wLMIrhw8_ukZ_F9C2amRLgl>	<de/Kurt_Lachner>	<hasFamilyName>	"Lachner"@deu
+<Prasterone>	<redirectedFrom>	"DHEA"@deu
+<_hasLinkLikelihood>	"0.10060881313189886"^^xsd:double	0.10060881313189886
+	葉篤正	<_hasLinkLikelihood>	"1.0"^^xsd:double	1.0
+	Bystrorechenskoye	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	elCevad	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	Льобау	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	越南人民行动党	<_hasLinkLikelihood>	"0.75"^^xsd:double	0.75
+	Indipindinsya	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	イェヴレのヤギ	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	Hestekjørvel	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	MultiHance	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	туба	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	Ĥarasaveja	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	ウェスȵイドϤウェイ	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	纳塔利娅米赫涅维奇	<_hasLinkLikelihood>	"1.0"^^xsd:double	1.0
+	خطافي	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	туби	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	BernardHeselton	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	Гёзлеме	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	landwirtschaftliche	<_hasLinkLikelihood>	"0.03867069486404834"^^xsd:double	0.03867069486404834
+	тубо	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	国際精神分析協会	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	0	<_hasLinkLikelihood>	"0.006806770580545658"^^xsd:double	0.006806770580545658
+	Sterrenschot	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	1	<_hasLinkLikelihood>	"0.1768456864347621"^^xsd:double	0.1768456864347621
+	2	<_hasLinkLikelihood>	"0.17343104975585652"^^xsd:double	0.17343104975585652
+	3	<_hasLinkLikelihood>	"0.13696129766708304"^^xsd:double	0.13696129766708304
+	тубу	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	4	<_hasLinkLikelihood>	"0.1302153359034873"^^xsd:double	0.1302153359034873
+	Wstrn	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	ピュアインスƣンクト蠍の本能	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	希倫電鯰	<_hasLinkLikelihood>	"0.6666666666666666"^^xsd:double	0.6666666666666666
+	5	<_hasLinkLikelihood>	"0.11264720524778636"^^xsd:double	0.11264720524778636
+	6	<_hasLinkLikelihood>	"0.10509670347917636"^^xsd:double	0.10509670347917636
+	7	<_hasLinkLikelihood>	"0.1293683419763353"^^xsd:double	0.1293683419763353
+	8	<_hasLinkLikelihood>	"0.11240831733327525"^^xsd:double	0.11240831733327525
+	9	<_hasLinkLikelihood>	"0.12130502014592182"^^xsd:double	0.12130502014592182
+	Citemor	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	Spojil	<_hasLinkLikelihood>	"0.75"^^xsd:double	0.75
+	тубы	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	Slapanov	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	A	<_hasLinkLikelihood>	"0.24026939717220333"^^xsd:double	0.24026939717220333
+	Tasmantrix	<_hasLinkLikelihood>	"0.9375"^^xsd:double	0.9375
+	B	<_hasLinkLikelihood>	"0.3992040420631273"^^xsd:double	0.3992040420631273
+	C	<_hasLinkLikelihood>	"0.4117797967433491"^^xsd:double	0.4117797967433491
+	D	<_hasLinkLikelihood>	"0.3457017497271673"^^xsd:double	0.3457017497271673
+	E	<_hasLinkLikelihood>	"0.28512634822105154"^^xsd:double	0.28512634822105154
+	F	<_hasLinkLikelihood>	"0.401896646806302"^^xsd:double	0.401896646806302
+	G	<_hasLinkLikelihood>	"0.3173618290218229"^^xsd:double	0.3173618290218229
+	H	<_hasLinkLikelihood>	"0.37163358142774566"^^xsd:double	0.37163358142774566
+	I	<_hasLinkLikelihood>	"0.5127692386283628"^^xsd:double	0.5127692386283628
+	J	<_hasLinkLikelihood>	"0.4092948793407887"^^xsd:double	0.4092948793407887
+	布勒格林	<_hasLinkLikelihood>	"1.0"^^xsd:double	1.0
+	K	<_hasLinkLikelihood>	"0.3979526514605381"^^xsd:double	0.3979526514605381
+	Կուլեբակսկի	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	L	<_hasLinkLikelihood>	"0.31355135182498806"^^xsd:double	0.31355135182498806
+	тувн	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	M	<_hasLinkLikelihood>	"0.3303656425326515"^^xsd:double	0.3303656425326515
+	N	<_hasLinkLikelihood>	"0.17632376851078788"^^xsd:double	0.17632376851078788
+	O	<_hasLinkLikelihood>	"0.29602184663074765"^^xsd:double	0.29602184663074765
+	P	<_hasLinkLikelihood>	"0.3065661533918242"^^xsd:double	0.3065661533918242
+	Q	<_hasLinkLikelihood>	"0.39026405212457527"^^xsd:double	0.39026405212457527
+	R	<_hasLinkLikelihood>	"0.36544176603754885"^^xsd:double	0.36544176603754885
+	guadarensis	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	S	<_hasLinkLikelihood>	"0.21552891396332863"^^xsd:double	0.21552891396332863
+	T	<_hasLinkLikelihood>	"0.35851547639859"^^xsd:double	0.35851547639859
+	U	<_hasLinkLikelihood>	"0.3621158667144174"^^xsd:double	0.3621158667144174
+	Valgren	<_hasLinkLikelihood>	"0.9144736842105263"^^xsd:double	0.9144736842105263
+	V	<_hasLinkLikelihood>	"0.44123346138540726"^^xsd:double	0.44123346138540726
+	W	<_hasLinkLikelihood>	"0.3313660887552513"^^xsd:double	0.3313660887552513
+	Zurückgekrümmter	<_hasLinkLikelihood>	"0.6666666666666666"^^xsd:double	0.6666666666666666
+	X	<_hasLinkLikelihood>	"0.5262756968091815"^^xsd:double	0.5262756968091815
+	Y	<_hasLinkLikelihood>	"0.15989841301930657"^^xsd:double	0.15989841301930657
+	Z	<_hasLinkLikelihood>	"0.2681169391661142"^^xsd:double	0.2681169391661142
+	Valgret	<_hasLinkLikelihood>	"0.6666666666666666"^^xsd:double	0.6666666666666666
+	туга	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	a	<_hasLinkLikelihood>	"0.07120201662453417"^^xsd:double	0.07120201662453417
+	b	<_hasLinkLikelihood>	"0.13271783795174374"^^xsd:double	0.13271783795174374
+	c	<_hasLinkLikelihood>	"0.1616356314322101"^^xsd:double	0.1616356314322101
+	d	<_hasLinkLikelihood>	"0.0817357909945522"^^xsd:double	0.0817357909945522
+	e	<_hasLinkLikelihood>	"0.08719433215977745"^^xsd:double	0.08719433215977745
+	Didzis	<_hasLinkLikelihood>	"0.43333333333333335"^^xsd:double	0.43333333333333335
+	f	<_hasLinkLikelihood>	"0.04791515953762564"^^xsd:double	0.04791515953762564
+	туги	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	g	<_hasLinkLikelihood>	"0.1365212218187786"^^xsd:double	0.1365212218187786
+	h	<_hasLinkLikelihood>	"0.1075703046534985"^^xsd:double	0.1075703046534985
+	i	<_hasLinkLikelihood>	"0.18060962661475846"^^xsd:double	0.18060962661475846
+	Enoil	<_hasLinkLikelihood>	"0.5"^^xsd:double	0.5
+	j	<_hasLinkLikelihood>	"0.09925129583413322"^^xsd:double	0.09925129583413322
+	Негоцін	<_hasLinkLikelihood>	"0.0"^^xsd:double	0.0
+	k	<_hasLinkLikelihood>	"0.19879469012134537"^^xsd:double	0.19879469012134537
+	SaintGermerdeFly	<_hasLinkLikelihood>	"0.8837209302325582"^^xsd:double	0.8837209302325582
+	l	<_hasLinkLikelihood>	"0.04191479615208429"^^xsd:double	0.04191479615208429
+	m	<_hasLinkLikelihood>	"0.3376689425158902"^^xsd:double	0.3376689425158902
+	n	<_hasLinkLikelihood>	"0.029801431160372354"^^xsd:double	0.029801431160372354
+	Anaptyxe	<_hasLinkLikelihood>	"0.3333333333333333"^^xsd:double	0.3333333333333333
+	Ortezzano	<_hasLinkLikelihood>	"0.8333333333333334"^^xsd:double	0.8333333333333334
+	Spojka	<_hasLinkLikelihood>	"0.5"^^xsd:double	0.5
+	o	<_hasLinkLikelihood>	"0.04466188478893614"^^xsd:double	0.04466188478893614
+	p	<_hasLinkLikelihood>	"0.04220077329043547"^^xsd:double	0.04220077329043547

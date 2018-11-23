@@ -1,0 +1,11 @@
+art.csv,36919,0.05
+battles.csv,17679,0.05
+known_corporations.csv,5000,0.02
+known_country.csv,10000,0.1
+location.csv,20000,0.15
+movies.csv,49853,0.05
+object_names.csv,30064,0.05
+organizations.csv,5000,0.02
+people.csv,5000,0.02
+songs.csv,88559,0.05
+states_man.csv,10000,0.1

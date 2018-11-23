@@ -1,0 +1,206 @@
+# This is a comment
+# these adverbials are always ignored if they form a constituent of a clause
+# E.g., from "I am so happy," we ignore "so" and extract "I" / "am" / "happy".
+so
+then
+thus
+why
+as
+even
+
+
+
+where
+what
+which
+who
+how
+that
+
+
+
+also
+even
+more
+then
+so
+now
+very
+only
+again
+still
+always
+here
+there
+most
+too
+almost
+just
+of course
+perhaps
+probably
+later
+enough
+sometimes
+once
+usually
+much
+back
+thus
+therefore
+ago
+at all
+a little
+up
+merely
+away
+indeed
+rather
+first
+maybe
+quite
+certainly
+nearly
+forward
+in fact
+apparently
+somewhat
+simply
+finally
+entirely
+on
+no
+presently
+hardly
+completely
+exactly
+generally
+actually
+instead
+further
+clearly
+easily
+in front
+somewhere
+previously
+as
+occasionally
+fully
+too much
+essentially
+such
+nevertheless
+primarily
+practically
+around
+directly
+slightly
+all
+no doubt
+along
+hence
+at once
+otherwise
+heavily
+sufficiently
+over
+greatly
+yet
+naturally
+ahead
+twice
+similarly
+for instance
+a bit
+in general
+truly
+normally
+fairly
+simultaneously
+precisely
+i.e.
+considerably
+furthermore
+in
+seriously
+readily
+today
+closely
+partly
+early
+swiftly
+apart
+softly
+strongly
+sure
+respectively
+half
+earlier
+widely
+surely
+close
+longer
+a lot
+right
+after all
+presumably
+deeply
+anyway
+somehow
+increasingly
+in turn
+evidently
+thereby
+successfully
+at times
+for the most part
+by no means
+forever
+anyhow
+elsewhere
+eventually
+long ago
+equally
+vaguely
+very much
+as follows
+specifically
+openly
+once again
+upstairs
+perfectly
+absolutely
+afterward
+off
+behind
+purely
+plainly
+hard
+publicly
+effectively
+for a while
+deliberately
+regardless
+invariably
+all over
+unfortunately
+anymore
+next
+mainly
+chiefly
+barely
+firmly
+extremely
+wildly
+wholly
+commonly
+altogether
+reasonably
+north
+nowhere
+part
+more or less
+to and fro
+though
+to be sure
+in detail

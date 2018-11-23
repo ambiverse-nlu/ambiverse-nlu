@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>##TITLE##</title>
+    <link rel="stylesheet" media="screen" href="##PATH##public/stylesheets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" media="screen" href="##PATH##public/stylesheets/main.css">
+    <link rel="stylesheet" media="screen" href="##PATH##public/stylesheets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="##PATH##public/stylesheets/dataTables.bootstrap4.min.css">
+
+    <script src="##PATH##public/javascripts/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script src="##PATH##public/javascripts/popper.min.js" type="text/javascript"></script>
+    <script src="##PATH##public/javascripts/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+    <script src="##PATH##public/javascripts/main.js" type="text/javascript"></script>
+
+    <style>
+    		ol {
+    		    list-style-type: none;
+    			margin: 0 !important;
+    		}
+
+    		.mention.blue {
+    		    color: #337ab7;
+    		}
+
+    		.mention.blue.underline {
+    		    border-bottom-color: #2e6da4;
+    		}
+    		.mention.gray {
+    		    color: #333 !important;
+    		    border-bottom: 2px dotted #777 !important;
+    		}
+    	</style>
+</head>
+    <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="##PATH##">##TITLE##</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    ##BODY##
+
+    <script src="##PATH##public/javascripts/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="##PATH##public/javascripts/dataTables.bootstrap4.min.js" type="text/javascript"></script>
+    <script src="##PATH##public/javascripts/highlight.pack.js" type="text/javascript"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+                $(document).ready(function () {
+
+                    $('body').tooltip({
+                        selector: '[data-toggle="tooltip"]',
+                        container: 'body'
+                    });
+
+                    $(function () {
+                      $('[data-toggle=popover]').popover()
+                    })
+
+                    $('body').popover({
+                       selector: '[data-toggle=popover]',
+                       html: true,
+                       trigger: 'click hover focus',
+                       delay: {show: 200, hide: 100}
+                    });
+
+
+                });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+# Dictionary for question 6
+# if these verbs appear in a clause that does not have an object or complement, then the clause 
+# type is SV instead of SVA (e.g., "He died in Princeton" is SV)
+
+# This is a comment
+
+die
+walk
+
+#added
+come
+explode
+laugh
+sit
+rise
+excel
+respond
+run
+cough
+swim
+emigrates
+mile
+act
+cry
+immigrate
+lie
+arrive
+continue
+go
+leave
+dance
+sing
+eat
+paint
+climb
+pay
+move
+change

@@ -1,0 +1,9 @@
+# Manually added dictionary entries
+# Format
+# Mention<TAB>Entity<TAB>Language_1<TAB>Language_2 ...
+Ecstasy	YAGO3:<The_Ecstasy_of_Gold> en
+Geisha	YAGO3:<Memoirs_of_a_Geisha_(film)   en
+Tom	YAGO3:<Lord_Voldemort>  en
+Red Lantern	YAGO3:<Raise_the_Red_Lantern>   en
+Shanghai Serenade	YAGO3:<Shanghai_Triad>  en
+Wang	YAGO3:<Faye_Wong>   en

@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: ambiverse/nlu-db-postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ambiversenlu
+      POSTGRES_DB: aida_20180120_b3_de_en_v18
+      POSTGRES_USER: ambiversenlu
+
+  nlu:
+    image: ambiverse/ambiverse-nlu
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - 8080:8080
+    environment:
+      AIDA_CONF: aida_20180120_b3_de_en_v18_db

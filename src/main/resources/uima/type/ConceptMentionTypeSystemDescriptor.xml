@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<typeSystemDescription xmlns="http://uima.apache.org/resourceSpecifier">
+    <name>ConceptMentionTypeSystemDescriptor</name>
+    <description/>
+    <version>1.0</version>
+    <vendor/>
+  <types>
+    <typeDescription>
+      <name>de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.uima.type.ConceptMention</name>
+      <description/>
+      <supertypeName>uima.tcas.Annotation</supertypeName>
+      <features>
+        <featureDescription>
+          <name>concept</name>
+          <description/>
+          <rangeTypeName>uima.cas.String</rangeTypeName>
+        </featureDescription>
+      </features>
+    </typeDescription>
+  </types>
+</typeSystemDescription>

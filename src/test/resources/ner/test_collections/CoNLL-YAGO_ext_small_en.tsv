@@ -1,0 +1,1253 @@
+-DOCSTART- (1 EU)
+EU	NNP	B	EU	--NME--	ORGANIZATION
+rejects	VBZ
+German	JJ	B	German	<Germany>	MISC
+call	NN
+to	TO
+boycott	VB
+British	JJ	B	British	<United_Kingdom>	MISC
+lamb	NN
+.	.
+
+Peter	NNP	B	Peter Blackburn	--NME--	PERSON
+Blackburn	NNP	I	Peter Blackburn	--NME--	PERSON
+
+BRUSSELS	NNP	B	BRUSSELS	<Brussels>	LOCATION
+1996-08-22	CD
+
+The	DT
+European	NNP	B	European Commission	<European_Commission>	ORGANIZATION
+Commission	NNP	I	European Commission	<European_Commission>	ORGANIZATION
+said	VBD
+on	IN
+Thursday	NNP
+it	PRP
+disagreed	VBD
+with	IN
+German	JJ	B	German	<Germany>	MISC
+advice	NN
+to	TO
+consumers	NNS
+to	TO
+shun	VB
+British	JJ	B	British	<United_Kingdom>	MISC
+lamb	NN
+until	IN
+scientists	NNS
+determine	VBP
+whether	IN
+mad	JJ
+cow	NN
+disease	NN
+can	MD
+be	VB
+transmitted	VBN
+to	TO
+sheep	NN
+.	.
+
+Germany	NNP	B	Germany	<Germany>	LOCATION
+'s	POS
+representative	NN
+to	TO
+the	DT
+European	NNP	B	European Union	<European_Union>	ORGANIZATION
+Union	NNP	I	European Union	<European_Union>	ORGANIZATION
+'s	POS
+veterinary	JJ
+committee	NN
+Werner	NNP	B	Werner Zwingmann	--NME--	PERSON
+Zwingmann	NNP	I	Werner Zwingmann	--NME--	PERSON
+said	VBD
+on	IN
+Wednesday	NNP
+consumers	NNS
+should	MD
+buy	VB
+sheepmeat	NN
+from	IN
+countries	NNS
+other	JJ
+than	IN
+Britain	NNP	B	Britain	<United_Kingdom>	LOCATION
+until	IN
+the	DT
+scientific	JJ
+advice	NN
+was	VBD
+clearer	JJR
+.	.
+
+"	"
+We	PRP
+do	VBP
+n't	RB
+support	VB
+any	DT
+such	JJ
+recommendation	NN
+because	IN
+we	PRP
+do	VBP
+n't	RB
+see	VB
+any	DT
+grounds	NNS
+for	IN
+it	PRP
+,	,
+"	"
+the	DT
+Commission	NNP	B	Commission	<European_Commission>	ORGANIZATION
+'s	POS
+chief	JJ
+spokesman	NN
+Nikolaus	NNP	B	Nikolaus van der Pas	--NME--	PERSON
+van	NNP	I	Nikolaus van der Pas	--NME--	PERSON
+der	FW	I	Nikolaus van der Pas	--NME--	PERSON
+Pas	NNP	I	Nikolaus van der Pas	--NME--	PERSON
+told	VBD
+a	DT
+news	NN
+briefing	NN
+.	.
+
+He	PRP
+said	VBD
+further	JJ
+scientific	JJ
+study	NN
+was	VBD
+required	VBN
+and	CC
+if	IN
+it	PRP
+was	VBD
+found	VBN
+that	IN
+action	NN
+was	VBD
+needed	VBN
+it	PRP
+should	MD
+be	VB
+taken	VBN
+by	IN
+the	DT
+European	NNP	B	European Union	<European_Union>	ORGANIZATION
+Union	NNP	I	European Union	<European_Union>	ORGANIZATION
+.	.
+
+He	PRP
+said	VBD
+a	DT
+proposal	NN
+last	JJ
+month	NN
+by	IN
+EU	NNP	B	EU	--NME--	ORGANIZATION
+Farm	NNP
+Commissioner	NNP
+Franz	NNP	B	Franz Fischler	<Franz_Fischler>	PERSON
+Fischler	NNP	I	Franz Fischler	<Franz_Fischler>	PERSON
+to	TO
+ban	VB
+sheep	NN
+brains	NNS
+,	,
+spleens	NNS
+and	CC
+spinal	JJ
+cords	NNS
+from	IN
+the	DT
+human	NN
+and	CC
+animal	NN
+food	NN
+chains	NNS
+was	VBD
+a	DT
+highly	RB
+specific	JJ
+and	CC
+precautionary	JJ
+move	NN
+to	TO
+protect	VB
+human	JJ
+health	NN
+.	.
+
+Fischler	JJR	B	Fischler	--NME--	PERSON
+proposed	VBN
+EU-wide	NNP	B	EU-wide	--NME--	MISC
+measures	VBZ
+after	IN
+reports	NNS
+from	IN
+Britain	NNP	B	Britain	<United_Kingdom>	LOCATION
+and	CC
+France	NNP	B	France	<France>	LOCATION
+that	WDT
+under	IN
+laboratory	NN
+conditions	NNS
+sheep	NN
+could	MD
+contract	VB
+Bovine	NNP	B	Bovine Spongiform Encephalopathy	--NME--	MISC
+Spongiform	NNP	I	Bovine Spongiform Encephalopathy	--NME--	MISC
+Encephalopathy	NNP	I	Bovine Spongiform Encephalopathy	--NME--	MISC
+(	(
+BSE	NNP	B	BSE	<Bovine_spongiform_encephalopathy>	MISC
+)	)
+--	:
+mad	JJ
+cow	NN
+disease	NN
+.	.
+
+But	CC
+Fischler	NNP	B	Fischler	--NME--	PERSON
+agreed	VBD
+to	TO
+review	VB
+his	PRP$
+proposal	NN
+after	IN
+the	DT
+EU	NNP	B	EU	--NME--	ORGANIZATION
+'s	POS
+standing	NN
+veterinary	JJ
+committee	NN
+,	,
+mational	JJ
+animal	NN
+health	NN
+officials	NNS
+,	,
+questioned	VBD
+if	IN
+such	JJ
+action	NN
+was	VBD
+justified	VBN
+as	IN
+there	RB
+was	VBD
+only	RB
+a	DT
+slight	JJ
+risk	NN
+to	TO
+human	JJ
+health	NN
+.	.
+
+Spanish	NNP	B	Spanish	<Spain>	MISC
+Farm	NNP
+Minister	NNP
+Loyola	NNP	B	Loyola de Palacio	<Loyola_de_Palacio>	PERSON
+de	NNP	I	Loyola de Palacio	<Loyola_de_Palacio>	PERSON
+Palacio	NNP	I	Loyola de Palacio	<Loyola_de_Palacio>	PERSON
+had	VBD
+earlier	RBR
+accused	VBN
+Fischler	NNP	B	Fischler	--NME--	PERSON
+at	IN
+an	DT
+EU	JJ	B	EU	--NME--	ORGANIZATION
+farm	NN
+ministers	NNS
+'	POS
+meeting	NN
+of	IN
+causing	VBG
+unjustified	JJ
+alarm	NN
+through	IN
+"	"
+dangerous	JJ
+generalisation	NN
+.	.
+"	"
+
+.	.
+
+Only	RB
+France	NNP	B	France	<France>	LOCATION
+and	CC
+Britain	NNP	B	Britain	<United_Kingdom>	LOCATION
+backed	VBD
+Fischler	NNP	B	Fischler	--NME--	PERSON
+'s	POS
+proposal	NN
+.	.
+
+The	DT
+EU	NNP	B	EU	--NME--	ORGANIZATION
+'s	POS
+scientific	JJ
+veterinary	JJ
+and	CC
+multidisciplinary	JJ
+committees	NNS
+are	VBP
+due	JJ
+to	TO
+re-examine	VB
+the	DT
+issue	NN
+early	RB
+next	JJ
+month	NN
+and	CC
+make	VB
+recommendations	NNS
+to	TO
+the	DT
+senior	JJ
+veterinary	JJ
+officials	NNS
+.	.
+
+Sheep	NNP
+have	VBP
+long	RB
+been	VBN
+known	VBN
+to	TO
+contract	NN
+scrapie	NN
+,	,
+a	DT
+brain-wasting	JJ
+disease	NN
+similar	JJ
+to	TO
+BSE	NNP	B	BSE	<Bovine_spongiform_encephalopathy>	MISC
+which	WDT
+is	VBZ
+believed	VBN
+to	TO
+have	VB
+been	VBN
+transferred	VBN
+to	TO
+cattle	NNS
+through	IN
+feed	NN
+containing	VBG
+animal	NN
+waste	NN
+.	.
+
+British	JJ	B	British	<United_Kingdom>	MISC
+farmers	NNS
+denied	VBN
+on	IN
+Thursday	NNP
+there	EX
+was	VBD
+any	DT
+danger	NN
+to	TO
+human	JJ
+health	NN
+from	IN
+their	PRP$
+sheep	NN
+,	,
+but	CC
+expressed	VBD
+concern	NN
+that	IN
+German	JJ	B	German	<Germany>	MISC
+government	NN
+advice	NN
+to	TO
+consumers	NNS
+to	TO
+avoid	VB
+British	JJ	B	British	<United_Kingdom>	MISC
+lamb	NN
+might	MD
+influence	VB
+consumers	NNS
+across	IN
+Europe	NNP	B	Europe	<Europe>	LOCATION
+.	.
+
+"	"
+What	WP
+we	PRP
+have	VBP
+to	TO
+be	VB
+extremely	RB
+careful	JJ
+of	IN
+is	VBZ
+how	WRB
+other	JJ
+countries	NNS
+are	VBP
+going	VBG
+to	TO
+take	VB
+Germany	NNP	B	Germany	<Germany>	LOCATION
+'s	POS
+lead	NN
+,	,
+"	"
+Welsh	NNP	B	Welsh National Farmers ' Union	--NME--	ORGANIZATION
+National	NNP	I	Welsh National Farmers ' Union	--NME--	ORGANIZATION
+Farmers	NNP	I	Welsh National Farmers ' Union	--NME--	ORGANIZATION
+'	POS	I	Welsh National Farmers ' Union	--NME--	ORGANIZATION
+Union	NNP	I	Welsh National Farmers ' Union	--NME--	ORGANIZATION
+(	(
+NFU	NNP	B	NFU	--NME--	ORGANIZATION
+)	)
+chairman	NN
+John	NNP	B	John Lloyd Jones	--NME--	PERSON
+Lloyd	NNP	I	John Lloyd Jones	--NME--	PERSON
+Jones	NNP	I	John Lloyd Jones	--NME--	PERSON
+said	VBD
+on	IN
+BBC	NNP	B	BBC radio	--NME--	ORGANIZATION
+radio	NN	I	BBC radio	--NME--	ORGANIZATION
+.	.
+
+Bonn	NNP	B	Bonn	<Bonn>	LOCATION
+has	VBZ
+led	VBN
+efforts	NNS
+to	TO
+protect	VB
+public	JJ
+health	NN
+after	IN
+consumer	NN
+confidence	NN
+collapsed	VBD
+in	IN
+March	NNP
+after	IN
+a	DT
+British	JJ	B	British	<United_Kingdom>	MISC
+report	NN
+suggested	VBD
+humans	NNS
+could	MD
+contract	VB
+an	DT
+illness	NN
+similar	JJ
+to	TO
+mad	JJ
+cow	NN
+disease	NN
+by	IN
+eating	VBG
+contaminated	VBN
+beef	NN
+.	.
+
+Germany	NNP	B	Germany	<Germany>	LOCATION
+imported	VBD
+47,600	CD
+sheep	NN
+from	IN
+Britain	NNP	B	Britain	<United_Kingdom>	LOCATION
+last	JJ
+year	NN
+,	,
+nearly	RB
+half	NN
+of	IN
+total	JJ
+imports	NNS
+.	.
+
+It	PRP
+brought	VBD
+in	IN
+4,275	CD
+tonnes	NNS
+of	IN
+British	JJ	B	British	<United_Kingdom>	MISC
+mutton	NN
+,	,
+some	DT
+10	CD
+percent	NN
+of	IN
+overall	JJ
+imports	NNS
+.	.
+
+-DOCSTART- (2 Rare)
+Rare	NNP
+Hendrix	NNP	B	Hendrix	<Jimi_Hendrix>	PERSON
+song	NN
+draft	NN
+sells	VBZ
+for	IN
+almost	RB
+$	$
+17,000	CD
+.	.
+
+LONDON	NNP	B	LONDON	<London>	LOCATION
+1996-08-22	CD
+
+A	DT
+rare	JJ
+early	JJ
+handwritten	JJ
+draft	NN
+of	IN
+a	DT
+song	NN
+by	IN
+U.S.	NNP	B	U.S.	<United_States>	LOCATION
+guitar	NN
+legend	NN
+Jimi	NNP	B	Jimi Hendrix	<Jimi_Hendrix>	PERSON
+Hendrix	NNP	I	Jimi Hendrix	<Jimi_Hendrix>	PERSON
+was	VBD
+sold	VBN
+for	IN
+almost	RB
+$	$
+17,000	CD
+on	IN
+Thursday	NNP
+at	IN
+an	DT
+auction	NN
+of	IN
+some	DT
+of	IN
+the	DT
+late	JJ
+musician	NN
+'s	POS
+favourite	JJ
+possessions	NNS
+.	.
+
+A	DT
+Florida	NNP	B	Florida	--NME--	LOCATION
+restaurant	NN
+paid	VBD
+10,925	CD
+pounds	NNS
+(	(
+$	$
+16,935	CD
+)	)
+for	IN
+the	DT
+draft	NN
+of	IN
+"	"
+Ai	VBZ	B	Ai n't no telling	--NME--	MISC
+n't	RB	I	Ai n't no telling	--NME--	MISC
+no	DT	I	Ai n't no telling	--NME--	MISC
+telling	VBG	I	Ai n't no telling	--NME--	MISC
+"	"
+,	,
+which	WDT
+Hendrix	NNP	B	Hendrix	<Jimi_Hendrix>	PERSON
+penned	VBN
+on	IN
+a	DT
+piece	NN
+of	IN
+London	NNP	B	London	<London>	LOCATION
+hotel	NN
+stationery	NN
+in	IN
+late	JJ
+1966	CD
+.	.
+
+At	IN
+the	DT
+end	NN
+of	IN
+a	DT
+January	NNP
+1967	CD
+concert	NN
+in	IN
+the	DT
+English	JJ	B	English	<England>	MISC
+city	NN
+of	IN
+Nottingham	NNP	B	Nottingham	<Nottingham>	LOCATION
+he	PRP
+threw	VBD
+the	DT
+sheet	NN
+of	IN
+paper	NN
+into	IN
+the	DT
+audience	NN
+,	,
+where	WRB
+it	PRP
+was	VBD
+retrieved	VBN
+by	IN
+a	DT
+fan	NN
+.	.
+
+Buyers	NNS
+also	RB
+snapped	VBD
+up	RB
+16	CD
+other	JJ
+items	NNS
+that	WDT
+were	VBD
+put	VBN
+up	RP
+for	IN
+auction	NN
+by	IN
+Hendrix	NNP	B	Hendrix	<Jimi_Hendrix>	PERSON
+'s	POS
+former	JJ
+girlfriend	NN
+Kathy	NNP	B	Kathy Etchingham	--NME--	PERSON
+Etchingham	NNP	I	Kathy Etchingham	--NME--	PERSON
+,	,
+who	WP
+lived	VBD
+with	IN
+him	PRP
+from	IN
+1966	CD
+to	TO
+1969	CD
+.	.
+
+They	PRP
+included	VBD
+a	DT
+black	JJ
+lacquer	NN
+and	CC
+mother	NN
+of	IN
+pearl	NN
+inlaid	VBD
+box	NN
+used	VBN
+by	IN
+Hendrix	NNP	B	Hendrix	<Jimi_Hendrix>	PERSON
+to	TO
+store	VB
+his	PRP$
+drugs	NNS
+,	,
+which	WDT
+an	DT
+anonymous	JJ
+Australian	JJ	B	Australian	<Australia>	MISC
+purchaser	NN
+bought	VBD
+for	IN
+5,060	CD
+pounds	NNS
+(	(
+$	$
+7,845	CD
+)	)
+.	.
+
+The	DT
+guitarist	NN
+died	VBD
+of	IN
+a	DT
+drugs	NNS
+overdose	NN
+in	IN
+1970	CD
+aged	VBN
+27	CD
+.	.
+
+-DOCSTART- (3 China)
+China	NNP	B	China	<People's_Republic_of_China>	LOCATION
+says	VBZ
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+spoils	VBZ
+atmosphere	NN
+for	IN
+talks	NNS
+.	.
+
+BEIJING	VBG	B	BEIJING	<Beijing>	LOCATION
+1996-08-22	CD
+
+China	NNP	B	China	<People's_Republic_of_China>	LOCATION
+on	IN
+Thursday	NNP
+accused	VBD
+Taipei	NNP	B	Taipei	<Taipei>	LOCATION
+of	IN
+spoiling	VBG
+the	DT
+atmosphere	NN
+for	IN
+a	DT
+resumption	NN
+of	IN
+talks	NNS
+across	IN
+the	DT
+Taiwan	NNP	B	Taiwan Strait	<Taiwan_Strait>	LOCATION
+Strait	NNP	I	Taiwan Strait	<Taiwan_Strait>	LOCATION
+with	IN
+a	DT
+visit	NN
+to	TO
+Ukraine	NNP	B	Ukraine	<Ukraine>	LOCATION
+by	IN
+Taiwanese	NNP	B	Taiwanese	<Republic_of_China>	MISC
+Vice	NNP
+President	NNP
+Lien	NNP	B	Lien Chan	<Lien_Chan>	PERSON
+Chan	NNP	I	Lien Chan	<Lien_Chan>	PERSON
+this	DT
+week	NN
+that	WDT
+infuriated	VBD
+Beijing	NNP	B	Beijing	<Beijing>	LOCATION
+.	.
+
+Speaking	VBG
+only	JJ
+hours	NNS
+after	IN
+Chinese	JJ	B	Chinese	<People's_Republic_of_China>	MISC
+state	NN
+media	NNS
+said	VBD
+the	DT
+time	NN
+was	VBD
+right	RB
+to	TO
+engage	VB
+in	IN
+political	JJ
+talks	NNS
+with	IN
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+,	,
+Foreign	NNP	B	Foreign Ministry	<Ministry_of_Foreign_Affairs_of_the_People's_Republic_of_China>	ORGANIZATION
+Ministry	NNP	I	Foreign Ministry	<Ministry_of_Foreign_Affairs_of_the_People's_Republic_of_China>	ORGANIZATION
+spokesman	NN
+Shen	NNP	B	Shen Guofang	--NME--	PERSON
+Guofang	NNP	I	Shen Guofang	--NME--	PERSON
+told	VBD
+Reuters	NNP	B	Reuters	--NME--	ORGANIZATION
+:	:
+"	"
+The	DT
+necessary	JJ
+atmosphere	NN
+for	IN
+the	DT
+opening	NN
+of	IN
+the	DT
+talks	NNS
+has	VBZ
+been	VBN
+disrupted	VBN
+by	IN
+the	DT
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+authorities	NNS
+.	.
+"	"
+
+State	NN
+media	NNS
+quoted	VBD
+China	NNP	B	China	<People's_Republic_of_China>	LOCATION
+'s	POS
+top	JJ
+negotiator	NN
+with	IN
+Taipei	NNP	B	Taipei	<Taipei>	LOCATION
+,	,
+Tang	NNP	B	Tang Shubei	--NME--	PERSON
+Shubei	NNP	I	Tang Shubei	--NME--	PERSON
+,	,
+as	IN
+telling	VBG
+a	DT
+visiting	JJ
+group	NN
+from	IN
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+on	IN
+Wednesday	NNP
+that	IN
+it	PRP
+was	VBD
+time	NN
+for	IN
+the	DT
+rivals	NNS
+to	TO
+hold	VB
+political	JJ
+talks	NNS
+.	.
+
+"	"
+Now	RB
+is	VBZ
+the	DT
+time	NN
+for	IN
+the	DT
+two	CD
+sides	NNS
+to	TO
+engage	VB
+in	IN
+political	JJ
+talks	NNS
+...	:
+
+that	WDT
+is	VBZ
+to	TO
+end	VB
+the	DT
+state	NN
+of	IN
+hostility	NN
+,	,
+"	"
+Thursday	NNP
+'s	POS
+overseas	JJ
+edition	NN
+of	IN
+the	DT
+People	NNPS	B	People's Daily	--NME--	ORGANIZATION
+'s	POS	I	People's Daily	--NME--	ORGANIZATION
+Daily	JJ	I	People's Daily	--NME--	ORGANIZATION
+quoted	VBN
+Tang	NNP	B	Tang	--NME--	PERSON
+as	IN
+saying	VBG
+.	.
+
+The	DT
+foreign	JJ
+ministry	NN
+'s	POS
+Shen	NNP	B	Shen	--NME--	ORGANIZATION
+told	VBD
+Reuters	NNP	B	Reuters Television	<Reuters>	ORGANIZATION
+Television	NNP	I	Reuters Television	<Reuters>	ORGANIZATION
+in	IN
+an	DT
+interview	NN
+he	PRP
+had	VBD
+read	VBN
+reports	NNS
+of	IN
+Tang	NNP	B	Tang	--NME--	PERSON
+'s	POS
+comments	NNS
+but	CC
+gave	VBD
+no	DT
+details	NNS
+of	IN
+why	WRB
+the	DT
+negotiator	NN
+had	VBD
+considered	VBN
+the	DT
+time	NN
+right	RB
+for	IN
+talks	NNS
+with	IN
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+,	,
+which	WDT
+Beijing	NNP	B	Beijing	<Beijing>	LOCATION
+considers	VBZ
+a	DT
+renegade	NN
+province	NN
+.	.
+
+China	NNP	B	China	<People's_Republic_of_China>	LOCATION
+,	,
+which	WDT
+has	VBZ
+long	RB
+opposed	VBN
+all	DT
+Taipei	NNP	B	Taipei	<Taipei>	LOCATION
+efforts	NNS
+to	TO
+gain	VB
+greater	JJR
+international	JJ
+recognition	NN
+,	,
+was	VBD
+infuriated	VBN
+by	IN
+a	DT
+visit	NN
+to	TO
+Ukraine	NNP	B	Ukraine	<Ukraine>	LOCATION
+this	DT
+week	NN
+by	IN
+Taiwanese	NNP	B	Taiwanese	<Republic_of_China>	MISC
+Vice	NNP
+President	NNP
+Lien	NNP	B	Lien	--NME--	PERSON
+.	.
+
+-DOCSTART- (4 China)
+China	NNP	B	China	<People's_Republic_of_China>	LOCATION
+says	VBZ
+time	NN
+right	RB
+for	IN
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+talks	NNS
+.	.
+
+BEIJING	VBG	B	BEIJING	<Beijing>	LOCATION
+1996-08-22	CD
+
+China	NNP	B	China	<People's_Republic_of_China>	LOCATION
+has	VBZ
+said	VBD
+it	PRP
+was	VBD
+time	NN
+for	IN
+political	JJ
+talks	NNS
+with	IN
+Taiwan	NNP	B	Taiwan	<Republic_of_China>	LOCATION
+and	CC
+that	IN
+the	DT
+rival	JJ
+island	NN
+should	MD
+take	VB
+practical	JJ
+steps	NNS
+towards	IN
+that	DT
+goal	NN
+.	.
+
+Consultations	NNS
+should	MD
+be	VB
+held	VBN
+to	TO
+set	VB
+the	DT
+time	NN
+and	CC
+format	NN
+of	IN
+the	DT
+talks	NNS
+,	,
+the	DT
+official	NN
+Xinhua	NNP	B	Xinhua	<Xinhua_News_Agency>	ORGANIZATION
+news	NN
+agency	NN
+quoted	VBN
+Tang	NNP	B	Tang Shubei	--NME--	PERSON
+Shubei	NNP	I	Tang Shubei	--NME--	PERSON
+,	,
+executive	JJ
+vice	NN
+chairman	NN
+of	IN
+the	DT
+Association	NNP	B	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+for	IN	I	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+Relations	NNP	I	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+Across	IN	I	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+the	DT	I	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+Taiwan	NNP	I	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+Straits	NNP	I	Association for Relations Across the Taiwan Straits	<Association_for_Relations_Across_the_Taiwan_Straits>	ORGANIZATION
+,	,
+as	IN
+saying	VBG
+late	RB
+on	RB
+Wednesday	NNP
+.	.
+
+-DOCSTART- (5 German)
+German	NNP	B	German	<Germany>	MISC
+July	NNP
+car	NN
+registrations	NNS
+up	RB
+14.2	CD
+pct	JJ
+yr	NN
+/	SYM
+yr	NN
+.	.
+
+FRANKFURT	NNP	B	FRANKFURT	<Frankfurt_am_Main>	LOCATION
+1996-08-22	CD
+
+German	JJ	B	German	<Germany>	MISC
+first-time	JJ
+registrations	NNS
+of	IN
+motor	NN
+vehicles	NNS
+jumped	VBD
+14.2	CD
+percent	NN
+in	IN
+July	NNP
+this	DT
+year	NN
+from	IN
+the	DT
+year-earlier	JJ
+period	NN
+,	,
+the	DT
+Federal	NNP	B	Federal office for motor vehicles	--NME--	ORGANIZATION
+office	NN	I	Federal office for motor vehicles	--NME--	ORGANIZATION
+for	IN	I	Federal office for motor vehicles	--NME--	ORGANIZATION
+motor	NN	I	Federal office for motor vehicles	--NME--	ORGANIZATION
+vehicles	NNS	I	Federal office for motor vehicles	--NME--	ORGANIZATION
+said	VBD
+on	IN
+Thursday	NNP
+.	.
+
+The	DT
+office	NN
+said	VBD
+356,725	CD
+new	JJ
+cars	NNS
+were	VBD
+registered	VBN
+in	IN
+July	NNP
+1996	CD
+--	:
+304,850	CD
+passenger	NN
+cars	NNS
+and	CC
+15,613	CD
+trucks	NNS
+.	.
+
+The	DT
+figures	NNS
+represent	VBP
+a	DT
+13.6	CD
+percent	NN
+increase	NN
+for	IN
+passenger	NN
+cars	NNS
+and	CC
+a	DT
+2.2	CD
+percent	NN
+decline	NN
+for	IN
+trucks	NNS
+from	IN
+July	NNP
+1995	CD
+.	.
+
+Motor-bike	JJ
+registration	NN
+rose	VBD
+32.7	CD
+percent	NN
+in	IN
+the	DT
+period	NN
+.	.
+
+The	DT
+growth	NN
+was	VBD
+partly	RB
+due	JJ
+to	TO
+an	DT
+increased	VBN
+number	NN
+of	IN
+Germans	NNPS	B	Germans	<Germany>	MISC
+buying	VBG
+German	JJ	B	German	<Germany>	MISC
+cars	NNS
+abroad	RB
+,	,
+while	IN
+manufacturers	NNS
+said	VBD
+that	DT
+domestic	JJ
+demand	NN
+was	VBD
+weak	JJ
+,	,
+the	DT
+federal	JJ
+office	NN
+said	VBD
+.	.
+
+Almost	RB
+all	DT
+German	JJ	B	German	<Germany>	MISC
+car	NN
+manufacturers	NNS
+posted	VBD
+gains	NNS
+in	IN
+registration	NN
+numbers	NNS
+in	IN
+the	DT
+period	NN
+.	.
+
+Volkswagen	NNP	B	Volkswagen AG	<Volkswagen>	ORGANIZATION
+AG	NNP	I	Volkswagen AG	<Volkswagen>	ORGANIZATION
+won	VBD
+77,719	CD
+registrations	NNS
+,	,
+slightly	RB
+more	RBR
+than	IN
+a	DT
+quarter	NN
+of	IN
+the	DT
+total	NN
+.	.
+
+Opel	NNP	B	Opel AG	<Opel>	ORGANIZATION
+AG	NNP	I	Opel AG	<Opel>	ORGANIZATION
+together	RB
+with	IN
+General	NNP	B	General Motors	<General_Motors>	ORGANIZATION
+Motors	NNPS	I	General Motors	<General_Motors>	ORGANIZATION
+came	VBD
+in	IN
+second	JJ
+place	NN
+with	IN
+49,269	CD
+registrations	NNS
+,	,
+16.4	CD
+percent	NN
+of	IN
+the	DT
+overall	JJ
+figure	NN
+.	.
+
+Third	JJ
+was	VBD
+Ford	NNP	B	Ford	<Ford_Motor_Company>	ORGANIZATION
+with	IN
+35,563	CD
+registrations	NNS
+,	,
+or	CC
+11.7	CD
+percent	NN
+.	.
+
+Only	RB
+Seat	NNP	B	Seat	--NME--	ORGANIZATION
+and	CC
+Porsche	NNP	B	Porsche	<Porsche>	ORGANIZATION
+had	VBD
+fewer	JJR
+registrations	NNS
+in	IN
+July	NNP
+1996	CD
+compared	VBN
+to	TO
+last	JJ
+year	NN
+'s	POS
+July	NNP
+.	.
+
+Seat	NN	B	Seat	--NME--	ORGANIZATION
+posted	VBD
+3,420	CD
+registrations	NNS
+compared	VBN
+with	IN
+5522	CD
+registrations	NNS
+in	IN
+July	NNP
+a	DT
+year	NN
+earlier	RBR
+.	.
+
+Porsche	NNP	B	Porsche	<Porsche>	ORGANIZATION
+'s	POS
+registrations	NNS
+fell	VBD
+to	TO
+554	CD
+from	IN
+643	CD
+.	.
