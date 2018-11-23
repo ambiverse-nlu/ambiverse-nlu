@@ -85,75 +85,76 @@
             </resource>
         </resources>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>2.3</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                        <configuration>
-                            <filters>
-                                <filter>
-                                    <artifact>*:*</artifact>
-                                    <excludes>
-                                        <exclude>META-INF/*.SF</exclude>
-                                        <exclude>META-INF/*.DSA</exclude>
-                                        <exclude>META-INF/*.RSA</exclude>
-                                    </excludes>
-                                </filter>
-                            </filters>
-                            <relocations>
-                                <relocation>
-                                    <pattern>com.google.guava</pattern>
-                                    <shadedPattern>com.ambiverse.thirdparty.guava</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>com.google.common</pattern>
-                                    <shadedPattern>com.ambiverse.thirdparty.common</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>com.google.thirdparty</pattern>
-                                    <shadedPattern>com.ambiverse.thirdparty.thirdparty</shadedPattern>
-                                </relocation>
-                                <relocation>
-                                    <pattern>com.esotericsoftware.kryo</pattern>
-                                    <shadedPattern>com.ambiverse.thirdparty.kryo</shadedPattern>
-                                </relocation>
-                            </relocations>
-                            <transformers>
+            <!-- This builds a working fat jar - needed e.g. when training entity salience on a spark cluster. -->
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-shade-plugin</artifactId>-->
+                <!--<version>2.3</version>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<phase>package</phase>-->
+                        <!--<goals>-->
+                            <!--<goal>shade</goal>-->
+                        <!--</goals>-->
+                        <!--<configuration>-->
+                            <!--<filters>-->
+                                <!--<filter>-->
+                                    <!--<artifact>*:*</artifact>-->
+                                    <!--<excludes>-->
+                                        <!--<exclude>META-INF/*.SF</exclude>-->
+                                        <!--<exclude>META-INF/*.DSA</exclude>-->
+                                        <!--<exclude>META-INF/*.RSA</exclude>-->
+                                    <!--</excludes>-->
+                                <!--</filter>-->
+                            <!--</filters>-->
+                            <!--<relocations>-->
+                                <!--<relocation>-->
+                                    <!--<pattern>com.google.guava</pattern>-->
+                                    <!--<shadedPattern>com.ambiverse.thirdparty.guava</shadedPattern>-->
+                                <!--</relocation>-->
+                                <!--<relocation>-->
+                                    <!--<pattern>com.google.common</pattern>-->
+                                    <!--<shadedPattern>com.ambiverse.thirdparty.common</shadedPattern>-->
+                                <!--</relocation>-->
+                                <!--<relocation>-->
+                                    <!--<pattern>com.google.thirdparty</pattern>-->
+                                    <!--<shadedPattern>com.ambiverse.thirdparty.thirdparty</shadedPattern>-->
+                                <!--</relocation>-->
+                                <!--<relocation>-->
+                                    <!--<pattern>com.esotericsoftware.kryo</pattern>-->
+                                    <!--<shadedPattern>com.ambiverse.thirdparty.kryo</shadedPattern>-->
+                                <!--</relocation>-->
+                            <!--</relocations>-->
+                            <!--<transformers>-->
 
-                                <!-- Set the main class of the executable JAR -->
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <!--&lt;!&ndash; Set the main class of the executable JAR &ndash;&gt;-->
+                                <!--<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">-->
 
-                                </transformer>
-                                <!-- Merge the uimaFIT configuration files -->
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/org.apache.uima.fit/fsindexes.txt</resource>
-                                </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/org.apache.uima.fit/types.txt</resource>
-                                </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/org.apache.uima.fit/typepriorities.txt</resource>
-                                </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                    <resource>META-INF/lab/engines.properties</resource>
-                                </transformer>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.XmlAppendingTransformer">
-                                    <resource>META-INF/spring/activemq-broker.xml</resource>
-                                </transformer>
-                            </transformers>
-                            <outputFile>
-                                ${project.build.directory}/${project.artifactId}-${project.version}-standalone.jar
-                            </outputFile>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+                                <!--</transformer>-->
+                                <!--&lt;!&ndash; Merge the uimaFIT configuration files &ndash;&gt;-->
+                                <!--<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">-->
+                                    <!--<resource>META-INF/org.apache.uima.fit/fsindexes.txt</resource>-->
+                                <!--</transformer>-->
+                                <!--<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">-->
+                                    <!--<resource>META-INF/org.apache.uima.fit/types.txt</resource>-->
+                                <!--</transformer>-->
+                                <!--<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">-->
+                                    <!--<resource>META-INF/org.apache.uima.fit/typepriorities.txt</resource>-->
+                                <!--</transformer>-->
+                                <!--<transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">-->
+                                    <!--<resource>META-INF/lab/engines.properties</resource>-->
+                                <!--</transformer>-->
+                                <!--<transformer implementation="org.apache.maven.plugins.shade.resource.XmlAppendingTransformer">-->
+                                    <!--<resource>META-INF/spring/activemq-broker.xml</resource>-->
+                                <!--</transformer>-->
+                            <!--</transformers>-->
+                            <!--<outputFile>-->
+                                <!--${project.build.directory}/${project.artifactId}-${project.version}-standalone.jar-->
+                            <!--</outputFile>-->
+                        <!--</configuration>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.1</version>
