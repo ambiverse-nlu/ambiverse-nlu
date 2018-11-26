@@ -68,6 +68,7 @@
         <ner-models.version>1.0</ner-models.version>
         <jersey.version>2.17</jersey.version>
         <jcommander.version>1.48</jcommander.version>
+        <maven.javadoc.failOnError>false</maven.javadoc.failOnError>
     </properties>
     <build>
         <resources>
