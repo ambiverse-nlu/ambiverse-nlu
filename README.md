@@ -205,7 +205,7 @@ KnowNER provides means to add new languages. Have a look at `docs/know-ner/new_c
 
 ## AmbiverseNLU License
 
-[https://www.apache.org/licenses/LICENSE-2.0.html](Apache License, Version 2.0)
+[Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 ## Maintainers and Contributors
 
