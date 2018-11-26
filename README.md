@@ -201,7 +201,7 @@ KnowNER provides means to add new languages. Have a look at `docs/know-ner/new_c
 ## Further Information
 
 * AmbiverseNLU project website: [http://www.mpi-inf.mpg.de/ambiverse-nlu/](http://www.mpi-inf.mpg.de/ambiverse-nlu/)
-* Build status: ![Build Status](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu.svg?branch=master)
+* [Build Status](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu): ![Build Status](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu.svg?branch=master)
 
 ## AmbiverseNLU License
 
