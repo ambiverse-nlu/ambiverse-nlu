@@ -102,18 +102,18 @@ export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18
 A list of existing pipelines can be found in `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.uima.pipelines.PipelineType`, where you can also define new pipelines.
 
 ## Database dumps 
-The database dumps can be downloaded from http://ambiversenlu-download.mpi-inf.mpg.de/.
+The database dumps can be downloaded from http://ambiversenlu-download.mpi-inf.mpg.de/. The database docker images will download them automatically.
 
 ## Natural Language Understanding Components
 
-### Named Entity Recognition 
+### KnowNER: Named Entity Recognition 
 
 Named Entity Recognition (NER) identifies mentions of named entities (persons,
 organizations, locations, songs, products, ...) in text.
 
 AmbiverseNLU provides KnowNER [1] for NER.
 
-### Named Entity Disambiguation
+### AIDA: Named Entity Disambiguation
 
 Named Entity Disambiguation (NED) links mentions recognized by NER (see above) 
 to a unique identifier. Most names are ambiguous, especially family names,
@@ -123,7 +123,7 @@ often referred to as entity linking.
 AmbiverseNLU provides an enhanced version of AIDA [2] for NED,
 mapping mentions to entities registered in the Wikipedia-derived YAGO [4,5] knowledge base.
 
-### Open Information Extraction
+### ClauSIE: Open Information Extraction
 
 Open Information Extraction (OpenIE) is the task of generating a structured output from 
 natural language text in the form of n-ary propositions, consisting of a subject, 
