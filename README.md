@@ -10,7 +10,7 @@ extraction, entity salience estimation, and concept linking.
 Take the example sentence below:
 
 ```
-Jack founded Alibaba  with investments from SoftBank and Goldman.
+Jack founded Alibaba with investments from SoftBank and Goldman.
 ```
 
 The AmbiverseNLU will produce the following outputs:
@@ -44,7 +44,7 @@ curl --request POST \
   --url http://localhost:8080/factextraction/analyze \
   --header 'accept: application/json' \
   --header 'content-type: application/json' \
-  --data '{"docId": "doc1", "text": "Jack founded Alibaba  with investments from SoftBank and Goldman.", "extractConcepts": "true" }'
+  --data '{"docId": "doc1", "text": "Jack founded Alibaba with investments from SoftBank and Goldman.", "extractConcepts": "true" }'
 ~~~~~~~~~~~~
 
 You can run AmbiverseNLU with different databases as backend, or also start the database backend alone. Check out the different configurations of the Docker files on https://github.com/ambiverse-nlu/dockerfiles for details.
