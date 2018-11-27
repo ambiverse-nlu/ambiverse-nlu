@@ -1,3 +1,5 @@
+Try the [demo](http://ambiversenlu.mpi-inf.mpg.de) at http://ambiversenlu.mpi-inf.mpg.de
+
 # Ambiverse Natural Language Understanding - AmbiverseNLU
 
 The Ambiverse Natural Language Understanding suite (AmbiverseNLU) combines a
@@ -8,18 +10,16 @@ extraction, entity salience estimation, and concept linking.
 Take the example sentence below:
 
 ```
-When Page played Kashmir at Knebworth, his guitar was uniquely tuned.
+Jack founded Alibaba  with investments from SoftBank and Goldman.
 ```
 
 The AmbiverseNLU will produce the following outputs:
 
-![picture](docs/demo.png "AmbiverseNLU Demo Example Output")
-
-Figure 1: AmbiverseNLU Demo Example Output
+[![AmbiverseNLU Demo](docs/demo.png "AmbiverseNLU Demo")](http://ambiversenlu.mpi-inf.mpg.de)
 
 ## AmbiverseNLU Demo
 
-Try the demo yourself: http://ambiversenlu.mpi-inf.mpg.de
+Quickly play with AmbiverseNLU without installing anything: [demo](http://ambiversenlu.mpi-inf.mpg.de) at http://ambiversenlu.mpi-inf.mpg.de
 
 ## Quick Start
 
@@ -44,7 +44,7 @@ curl --request POST \
   --url http://localhost:8080/factextraction/analyze \
   --header 'accept: application/json' \
   --header 'content-type: application/json' \
-  --data '{"docId": "doc1", "text": "Jack founded Alibaba in Hangzhou with investments from SoftBank and Goldman.", "extractConcepts": "true" }'
+  --data '{"docId": "doc1", "text": "Jack founded Alibaba  with investments from SoftBank and Goldman.", "extractConcepts": "true" }'
 ~~~~~~~~~~~~
 
 You can run AmbiverseNLU with different databases as backend, or also start the database backend alone. Check out the different configurations of the Docker files on https://github.com/ambiverse-nlu/dockerfiles for details.
