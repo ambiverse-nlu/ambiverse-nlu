@@ -11,20 +11,14 @@ import org.roaringbitmap.RoaringBitmap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.sql.Connection;
-
 /**
- * Similarity of two entities is the number of common inlinks
- *
- *
+ * Computes the similarity of two entities as Jaccard coefficcient of inlink sets.
  */
 public class InlinkOverlapEntityEntitySimilarity extends EntityEntitySimilarity {
 
   private static final Logger logger = LoggerFactory.getLogger(InlinkOverlapEntityEntitySimilarity.class);
 
   private TIntObjectHashMap<RoaringBitmap> entity2vector;
-
-  Connection con;
 
   public InlinkOverlapEntityEntitySimilarity(EntityEntitySimilarityMeasure similarityMeasure, EntitiesContext entityContext) throws Exception {
     // not needed - uses entites directly
@@ -60,7 +54,7 @@ public class InlinkOverlapEntityEntitySimilarity extends EntityEntitySimilarity 
     logger.debug("Done initializing InlinkEntityEntitySimilarity");
   }
 
-  @Override public double calcSimilarity(Entity a, Entity b) throws Exception {
+  @Override public double calcSimilarity(Entity a, Entity b) {
     RoaringBitmap bsA = entity2vector.get(a.getId());
     RoaringBitmap bsB = entity2vector.get(b.getId());
 
