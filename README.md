@@ -188,7 +188,7 @@ preconfigured, new ones can be added easily.
 
 #### Using pipelines programaticaly 
 
-#####In the web service:
+##### In the web service:
 
 Have a look at `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.service.web.resource.impl.AnalyzeResourceImpl.java` which configures the web service.
 
