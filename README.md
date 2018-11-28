@@ -123,7 +123,7 @@ often referred to as entity linking.
 AmbiverseNLU provides an enhanced version of AIDA [2] for NED,
 mapping mentions to entities registered in the Wikipedia-derived YAGO [4,5] knowledge base.
 
-### ClauSIE: Open Information Extraction
+### ClausIE: Open Information Extraction
 
 Open Information Extraction (OpenIE) is the task of generating a structured output from 
 natural language text in the form of n-ary propositions, consisting of a subject, 
@@ -212,6 +212,7 @@ KnowNER provides means to add new languages. Have a look at `docs/know-ner/new_c
 Current Maintainers (in alphabetical order):
 
 * Dragan Milchevski
+* Ghazale Haratinezhad Torbati
 * Johannes Hoffart
 * Luciano Del Corro
 
@@ -225,7 +226,6 @@ Contributors (in alphabetical order):
 * Dominic Seyler
 * Dragan Milchevski
 * Felix Keller
-* Ghazale Haratinezhad Torbati
 * Johannes Hoffart
 * Luciano Del Corro
 * Mohamed Amir Yosef
