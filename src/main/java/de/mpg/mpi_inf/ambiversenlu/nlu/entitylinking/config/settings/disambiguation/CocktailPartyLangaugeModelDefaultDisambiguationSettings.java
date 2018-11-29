@@ -8,7 +8,6 @@ import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.graph.similarity.util.Simil
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.util.ClassPathUtils;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -40,8 +39,9 @@ public class CocktailPartyLangaugeModelDefaultDisambiguationSettings extends Dis
     String fileNameNE = "SwitchedUnit"; 
     String flag = "";
 
-    List<String[]> cohConfigs = new ArrayList<>();
-    cohConfigs = EntityEntitySimilarityCombinationsIds.MilneWitten.getConfig();
+    List<String[]> cohConfigs;
+    cohConfigs = EntityEntitySimilarityCombinationsIds.InlinkOverlap.getConfig();
+//    cohConfigs = EntityEntitySimilarityCombinationsIds.MilneWitten.getConfig();
 //    cohConfigs = EntityEntitySimilarityCombinationsIds.VectorRepresentation.getConfig();
 //    cohConfigs = EntityEntitySimilarityCombinationsIds.MilneWittenAndVectorRepresentation.getConfig(); //0.5 weights
     
