@@ -241,11 +241,12 @@ Contributors (in alphabetical order):
 * Artem Boldyrev
 * Daniel Bär
 * Dat Ba Nguyen
-* Ilaria Bordino
 * Diego Ceccarelli 
 * Dominic Seyler
 * Dragan Milchevski
 * Felix Keller
+* Ghazale Haratinezhad Torbati
+* Ilaria Bordino
 * Johannes Hoffart
 * Luciano Del Corro
 * Mohamed Amir Yosef
