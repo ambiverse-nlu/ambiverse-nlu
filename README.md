@@ -96,7 +96,7 @@ The main command line interface is `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinkin
 
 ```
 export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18
-./scripts/drive/run_pipeline.sh -s "Albert Einstein was born in Ulm" -l "en" -pip "ENTITY_SALIENCE"
+./scripts/driver/run_pipeline.sh -s "Albert Einstein was born in Ulm" -l "en" -pip "ENTITY_SALIENCE"
 ```
 
 A list of existing pipelines can be found in `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.uima.pipelines.PipelineType`, where you can also define new pipelines.
