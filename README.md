@@ -149,7 +149,7 @@ entity disambiguation with knowledge-informed spotting.
 Entity Salience gives each entity in a document a score in [0,1], denoting its 
 importance with respect to the document.
 
-## Resource Requirements
+## Resource Considerations
 
 ### Main Memory
 
@@ -168,6 +168,17 @@ To be on the safe side, plan 8 GB of main memory per document.
 This means that if you want to disambiguate one document at a time, you need at least 16 GB
 of main memory. If you want to disambiguate 4 documents in parallel, you should be using
 40 GB.
+
+### Throughput Analysis
+
+Benchmarking setup: (multi-threaded) Entity Linking Service in a single Docker-container using 4 cores and 32 GB of main memory.
+Cassandra node running on the same physical machine.
+
+For 1,000 news articles (2,531 chars on average, 26 named entities on average), with highest-quality setting (coherence):
+* Average time per article: 2.36 seconds
+* Throughput: 1.7 documents per second
+
+
 
 ## Advanced configuration
 
