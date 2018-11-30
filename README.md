@@ -178,7 +178,11 @@ For 1,000 news articles (2,531 chars on average, 26 named entities on average), 
 * Average time per article: 2.36 seconds
 * Throughput: 1.7 documents per second
 
+## Evaluation
 
+The Entity Disambiguation accuracy on the widely used CoNLL-YAGO dataset [2] is as follows:
+* Micro-Accuracy: 84.61%
+* Macro-Accuracy: 82.67%
 
 ## Advanced configuration
 
