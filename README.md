@@ -149,6 +149,26 @@ entity disambiguation with knowledge-informed spotting.
 Entity Salience gives each entity in a document a score in [0,1], denoting its 
 importance with respect to the document.
 
+## Resource Requirements
+
+### Main Memory
+
+The Entity/Concept Linking component has the largest main memory requirements. This
+is due to the large contextual and coherence models it needs to load in order to disambiguate
+with high accuracy.
+
+Initially, Entity Linking loads static data in main memory, which requires (depending on the
+languages you are configuring it for), a couple of GB. We estimate 8 GB for all languages to 
+be the upper bound.
+
+The actual requirements per document vary depending on the density of mentions and the
+number of entites per mention, so it cannot be estimated just by the length of the document.
+To be on the safe side, plan 8 GB of main memory per document.
+
+This means that if you want to disambiguate one document at a time, you need at least 16 GB
+of main memory. If you want to disambiguate 4 documents in parallel, you should be using
+40 GB.
+
 ## Advanced configuration
 
 ### Configuring the environment
