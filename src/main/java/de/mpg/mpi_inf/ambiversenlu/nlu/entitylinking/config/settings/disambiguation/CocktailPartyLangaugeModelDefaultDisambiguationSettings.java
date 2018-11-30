@@ -69,11 +69,11 @@ public class CocktailPartyLangaugeModelDefaultDisambiguationSettings extends Dis
     // double cohRobThresh = 0.8;
     // double confTestThresh = 1.0;
 
-    double alpha = 0.65;
-    double cohRobThreshNE = 1.05;
-    double cohRobThreshC = 0;//not used
-    double confTestThresh = 0.55;
-    double nullThresh = 0.0;
+    double alpha = 0.645833;
+    double cohRobThreshNE = 1.05833;
+    double cohRobThreshC = 0; //not used
+    double confTestThresh = 0.7125;
+    double nullThresh = 0.1;
 
     switch (getTrainingCorpus()) {
       case "spiegel":
