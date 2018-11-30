@@ -15,6 +15,10 @@ import org.apache.log4j.Logger;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * Not efficient enough, for now the regular ParameterOptimizer is the better bet.
+ *
+ */
 public class SGDParameterOptimizer {
 
   private static final Logger logger_ = Logger.getLogger(SGDParameterOptimizer.class);
