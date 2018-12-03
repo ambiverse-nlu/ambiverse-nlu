@@ -58,17 +58,17 @@ public class CocktailPartyTest {
     de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.service.web.model.Entity mapped = mappings.get("Page").getEntity();
     Double score = mapped.getConfidence();
     assertEquals("http://www.wikidata.org/entity/TESTING:Jimmy_Page", mapped.getId());
-    assertEquals(0.6867701831293966, score, 0.00001);
+    assertEquals(0.6081203302087401, score, 0.00001);
 
     mapped = mappings.get("Kashmir").getEntity();
     score = mapped.getConfidence();
     assertEquals("http://www.wikidata.org/entity/TESTING:Kashmir_(song)", mapped.getId());
-    assertEquals(0.4397143998422002, score, 0.00001);
+    assertEquals(0.380952380952381, score, 0.00001);
 
     mapped = mappings.get("Knebworth").getEntity();
     score = mapped.getConfidence();
     assertEquals("http://www.wikidata.org/entity/TESTING:Knebworth_Festival", mapped.getId());
-    assertEquals(0.918187376294634, score, 0.00001);
+    assertEquals(0.8061653840769745, score, 0.00001);
 
     mapped = mappings.get("Les Paul").getEntity();
     score = mapped.getConfidence();
