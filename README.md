@@ -122,10 +122,10 @@ to a unique identifier. Most names are ambiguous, especially family names,
 and entity disambiguation resolves this ambiguity. Together with NER, NED is
 often referred to as entity linking.
 
+AIDA works on English, Chinese, Czech, German, Spanish, and Russian texts.
+
 AmbiverseNLU provides an enhanced version of AIDA [2] for NED,
 mapping mentions to entities registered in the Wikipedia-derived YAGO [4,5] knowledge base.
-
-AIDA works on English, Chinese, Czech, German, Spanish, and Russian texts.
 
 ### ClausIE: Open Information Extraction
 
