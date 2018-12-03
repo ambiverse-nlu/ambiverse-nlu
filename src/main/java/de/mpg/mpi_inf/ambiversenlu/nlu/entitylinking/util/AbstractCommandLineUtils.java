@@ -23,16 +23,7 @@ public abstract class AbstractCommandLineUtils {
     public CommandLine parseCommandLineArgs(String[] args) throws ParseException {
         Options commandLineOptions = buildCommandLineOptions();
         CommandLineParser parser = new PosixParser();
-        CommandLine cmd = null;
-        try {
-            cmd = parser.parse(commandLineOptions, args);
-        } catch (MissingOptionException e) {
-            System.out.println("\n\n" + e + "\n\n");
-            printHelp(commandLineOptions);
-        }
-        if (cmd.hasOption("h")) {
-            printHelp(commandLineOptions);
-        }
+        CommandLine cmd = parser.parse(commandLineOptions, args);
         return cmd;
     }
 

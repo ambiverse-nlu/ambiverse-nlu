@@ -137,12 +137,25 @@ public class AIDAOptimizable extends Optimizable {
     try {
       String[] args = createArgsForParams(currentConfig.getParameters());
       new UimaCommandLineDisambiguator().run(args);
-      Map<String, Double> results = Utils.readResults(currentConfig.getParameter("d").getValueRepresentation());
+      Map<String, Double> results = Utils.readResults(getCollectionDirectory());
       result = results.get("F1");
     } catch (Throwable throwable) {
       throw new RuntimeException(throwable);
     }
     return result;
+  }
+
+  private String getCollectionDirectory() {
+    Iterator<String> itr = baseParams_.iterator();
+
+    while (itr.hasNext()) {
+      String e = itr.next();
+
+      if (e.equals("-d")) {
+        return itr.next();
+      }
+    }
+    return null;
   }
   
   private String[] createArgsForParams(Collection<Parameter> params) {

@@ -8,7 +8,6 @@ import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.graph.similarity.util.Simil
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.util.ClassPathUtils;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
@@ -40,8 +39,9 @@ public class CocktailPartyLangaugeModelDefaultDisambiguationSettings extends Dis
     String fileNameNE = "SwitchedUnit"; 
     String flag = "";
 
-    List<String[]> cohConfigs = new ArrayList<>();
-    cohConfigs = EntityEntitySimilarityCombinationsIds.MilneWitten.getConfig();
+    List<String[]> cohConfigs;
+    cohConfigs = EntityEntitySimilarityCombinationsIds.InlinkOverlap.getConfig();
+//    cohConfigs = EntityEntitySimilarityCombinationsIds.MilneWitten.getConfig();
 //    cohConfigs = EntityEntitySimilarityCombinationsIds.VectorRepresentation.getConfig();
 //    cohConfigs = EntityEntitySimilarityCombinationsIds.MilneWittenAndVectorRepresentation.getConfig(); //0.5 weights
     
@@ -63,17 +63,12 @@ public class CocktailPartyLangaugeModelDefaultDisambiguationSettings extends Dis
     
     setMaxCandidatesPerEntityByPrior(500);
 
-    // Default hyperparameters are trained on CoNLL.
-    // Semeval13, 1-6: -a: 0.63, -q: 0.8, -h: 1.0
-    // double alpha = 0.63;
-    // double cohRobThresh = 0.8;
-    // double confTestThresh = 1.0;
-
-    double alpha = 0.65;
-    double cohRobThreshNE = 1.05;
-    double cohRobThreshC = 0;//not used
-    double confTestThresh = 0.55;
-    double nullThresh = 0.0;
+    // Default hyperparameters are trained on the AIDA-CoNLL dataset.
+    double alpha = 0.7125;
+    double cohRobThreshNE = 1.075;
+    double cohRobThreshC = 0; //not used
+    double confTestThresh = 0.635;
+    double nullThresh = 0.00833;
 
     switch (getTrainingCorpus()) {
       case "spiegel":
