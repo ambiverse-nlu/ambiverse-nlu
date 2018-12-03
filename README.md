@@ -2,7 +2,7 @@ Try the [demo](http://ambiversenlu.mpi-inf.mpg.de) at http://ambiversenlu.mpi-in
 
 # Ambiverse Natural Language Understanding - AmbiverseNLU
 
-The Ambiverse Natural Language Understanding suite (AmbiverseNLU) combines a
+The multilingual Ambiverse Natural Language Understanding suite (AmbiverseNLU) combines a
 number of state-of-the-art components for language understanding tasks: named
 entity recognition and disambiguation (or entity linking), open information
 extraction, entity salience estimation, and concept linking.
@@ -111,6 +111,8 @@ The database dumps can be downloaded from http://ambiversenlu-download.mpi-inf.m
 Named Entity Recognition (NER) identifies mentions of named entities (persons,
 organizations, locations, songs, products, ...) in text.
 
+KnowNER works on English, Czech, German, Spanish, and Russian texts.
+
 AmbiverseNLU provides KnowNER [1] for NER.
 
 ### AIDA: Named Entity Disambiguation
@@ -123,6 +125,8 @@ often referred to as entity linking.
 AmbiverseNLU provides an enhanced version of AIDA [2] for NED,
 mapping mentions to entities registered in the Wikipedia-derived YAGO [4,5] knowledge base.
 
+AIDA works on English, Chinese, Czech, German, Spanish, and Russian texts.
+
 ### ClausIE: Open Information Extraction
 
 Open Information Extraction (OpenIE) is the task of generating a structured output from 
@@ -133,6 +137,8 @@ was born in Ulm", an open information extraction system will generate the extrac
 referred as the subject, the second as the relation, and the last one as the object 
 or argument.
 
+ClausIE works on English texts.
+
 AmbiverseNLU provides an enhanced version of ClausIE [3] for OpenIE.
 
 ### Concept Linking
@@ -141,6 +147,8 @@ Concept linking is similar to entity linking but with a focus on non-named entit
 (e.g., car, chair, etc.). It identifies relevant concepts in text and links them to a 
 to concepts registered in the Wikipedia-derived YAGO [4,5] knowledge base.
 
+Concept Linking works on English, Chinese, Czech, German, Spanish, and Russian texts.
+
 AmbiverseNLU provides a new concept linking component based on the original AIDA 
 entity disambiguation with knowledge-informed spotting.
 
@@ -148,6 +156,8 @@ entity disambiguation with knowledge-informed spotting.
 
 Entity Salience gives each entity in a document a score in [0,1], denoting its 
 importance with respect to the document.
+
+Our Entity Salience is fully multilingual. 
 
 ## Resource Considerations
 
