@@ -4,7 +4,6 @@ import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.Serializer;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
-import com.esotericsoftware.kryo.util.Pool;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.util.CompressionUtils;
 import gnu.trove.impl.Constants;
 import gnu.trove.iterator.TIntDoubleIterator;
@@ -24,7 +23,7 @@ public class EncoderDecoderKryo<T> implements EncoderDecoder<T> {
 
   private static final Logger logger = LoggerFactory.getLogger(EncoderDecoderKryo.class);
 
-  private static Pool<Kryo> kryos;
+  private static ThreadLocal<Kryo> kryos;
 
   private static int MAX_OBJECT_SIZE = 250000; //The maximum size of the object allowed in the pool
 
@@ -34,10 +33,10 @@ public class EncoderDecoderKryo<T> implements EncoderDecoder<T> {
     this.objectType = objectType;
 
     if (kryos == null) {
-      kryos = new Pool<Kryo>(true, true, 50) {
+      kryos = new ThreadLocal<Kryo>(){
         //Max capacity is needed, to allow automatically cleaning, if the maximum is reached clean is called to remove unused references
 
-        protected Kryo create() {
+        protected Kryo initialValue() {
           Kryo kryo = new Kryo();
           kryo.setRegistrationRequired(true);
           //  All primitives, primitive wrappers, and String are registered by default.
@@ -81,8 +80,8 @@ public class EncoderDecoderKryo<T> implements EncoderDecoder<T> {
               }
 
               final Iterator<AbstractMap.SimpleEntry<Integer, Double>> sorted = IntStream.range(0, keys.length)
-                      .mapToObj(i -> new AbstractMap.SimpleEntry<>(keys[i], values[i]))
-                      .sorted(Comparator.comparingInt(b -> b.getKey())).iterator();
+                  .mapToObj(i -> new AbstractMap.SimpleEntry<>(keys[i], values[i]))
+                  .sorted(Comparator.comparingInt(b -> b.getKey())).iterator();
 
               int index = 0;
               while(sorted.hasNext()) {
@@ -123,7 +122,7 @@ public class EncoderDecoderKryo<T> implements EncoderDecoder<T> {
 
   @Override public byte[] encode(T element) {
     logger.debug("Encoding using kryo.");
-    Kryo kryo = kryos.obtain();
+    Kryo kryo = kryos.get();
     int size = 0;
     Output output = new Output(0, 500000000);
     try {
@@ -136,7 +135,7 @@ public class EncoderDecoderKryo<T> implements EncoderDecoder<T> {
     } finally {
       output.close();
       if(size < MAX_OBJECT_SIZE) { //Small objects will be put back into the pull, larger ones will be thrown away
-        kryos.free(kryo);
+        kryos.remove();
       }
     }
 
@@ -146,14 +145,14 @@ public class EncoderDecoderKryo<T> implements EncoderDecoder<T> {
     logger.debug("Decoding using kryo.");
     int size = bytes.length;
     Input input = new Input(bytes);
-    Kryo kryo = kryos.obtain();
+    Kryo kryo = kryos.get();
     try {
       T result = kryo.readObject(input, objectType);
       return result;
     } finally {
       input.close();
       if(size < MAX_OBJECT_SIZE) { //Small objects will be put back into the pull, larger ones will be thrown away
-        kryos.free(kryo);
+        kryos.remove();
       }
     }
   }
