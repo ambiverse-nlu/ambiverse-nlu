@@ -63,17 +63,12 @@ public class CocktailPartyLangaugeModelDefaultDisambiguationSettings extends Dis
     
     setMaxCandidatesPerEntityByPrior(500);
 
-    // Default hyperparameters are trained on CoNLL.
-    // Semeval13, 1-6: -a: 0.63, -q: 0.8, -h: 1.0
-    // double alpha = 0.63;
-    // double cohRobThresh = 0.8;
-    // double confTestThresh = 1.0;
-
-    double alpha = 0.645833;
-    double cohRobThreshNE = 1.05833;
+    // Default hyperparameters are trained on the AIDA-CoNLL dataset.
+    double alpha = 0.7125;
+    double cohRobThreshNE = 1.075;
     double cohRobThreshC = 0; //not used
-    double confTestThresh = 0.7125;
-    double nullThresh = 0.1;
+    double confTestThresh = 0.635;
+    double nullThresh = 0.00833;
 
     switch (getTrainingCorpus()) {
       case "spiegel":
