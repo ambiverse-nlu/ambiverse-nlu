@@ -57,7 +57,7 @@ Start the PostgreSQL backend with the fully multilingual knowledge graph:
 ~~~~~~~~~~~~
 docker run -d --name nlu-db-postgres \
   -p 5432:5432 \
-  -e POSTGRES_DB=aida_20180120_cs_de_en_es_ru_zh_v18 \
+  -e POSTGRES_DB=aida_20180120_cs_de_en_es_ru_zh_v18_db \
   -e POSTGRES_USER=ambiversenlu \
   -e POSTGRES_PASSWORD=ambiversenlu \
   ambiverse/nlu-db-postgres
@@ -67,21 +67,21 @@ If you have less than 32 GB of main memory, you can also start a PostgreSQL back
 ~~~~~~~~~~~~
 docker run -d --name nlu-db-postgres \
   -p 5432:5432 \
-  -e POSTGRES_DB=aida_20180120_b3_de_en_v18 \
+  -e POSTGRES_DB=aida_20180120_b3_de_en_v18_db \
   -e POSTGRES_USER=ambiversenlu \
   -e POSTGRES_PASSWORD=ambiversenlu \
   ambiverse/nlu-db-postgres
 ~~~~~~~~~~~~
 
-Make sure to use `aida_20180120_b3_de_en_v18` as value for the `AIDA_CONF` exports below.
+Make sure to use `aida_20180120_b3_de_en_v18_db` as value for the `AIDA_CONF` exports below.
 
 ### Start the Web Service using Maven and Jetty from Source Code
 
-1. Adapt the database configuration. You need to adapt the `database_aida.properties` of the `AIDA_CONF` you are using. For example, if you are using `aida_20180120_cs_de_en_es_ru_zh_v18` as configuration, adapt `src/main/config/aida_20180120_cs_de_en_es_ru_zh_v18/database_aida.properties` and make sure that the property `dataSource.serverName` points to the host of the machine (or linked docker image) that runs the database.  
+1. Adapt the database configuration. You need to adapt the `database_aida.properties` of the `AIDA_CONF` you are using. For example, if you are using `aida_20180120_cs_de_en_es_ru_zh_v18_db` as configuration, adapt `src/main/config/aida_20180120_cs_de_en_es_ru_zh_v18_db/database_aida.properties` and make sure that the property `dataSource.serverName` points to the host of the machine (or linked docker image) that runs the database.  
 2. Start the web service by executing the following script:
 
 ~~~~~~~~~~~~
-export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18
+export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18_db
 ./scripts/start_webservice.sh
 ~~~~~~~~~~~~
 
@@ -95,7 +95,7 @@ Adapt the database configuration as explained in the section above (Starting the
 The main command line interface is `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.run.UimaCommandLineDisambiguator`. Example call using a script: 
 
 ```
-export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18
+export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18_db
 ./scripts/driver/run_pipeline.sh -s "Albert Einstein was born in Ulm" -l "en" -pip "ENTITY_SALIENCE"
 ```
 
@@ -202,7 +202,7 @@ Most settings are bundled by folder in 'src/main/config'. Set the configuration
 you need using the AIDA_CONF environment variable, e.g.:
 
 ```
-export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18
+export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18_db
 ```
 
 ### AmbiverseNLU Pipeline
