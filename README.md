@@ -250,7 +250,7 @@ KnowNER provides means to add new languages. Have a look at `docs/know-ner/new_c
 
 ## Stay in Touch
 
-Sign up for the AmbiverseNLU mailing list: https://lists.mpi-inf.mpg.de/listinfo/ambiversenlu
+Sign up for the AmbiverseNLU mailing list: Visit https://lists.mpi-inf.mpg.de/listinfo/ambiversenlu or send a mail to ambiversenlu-subscribe@lists.mpi-inf.mpg.de
 
 ## AmbiverseNLU License
 
