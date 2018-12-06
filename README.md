@@ -5,7 +5,8 @@ Try the [demo](http://ambiversenlu.mpi-inf.mpg.de) at http://ambiversenlu.mpi-in
 The multilingual Ambiverse Natural Language Understanding suite (AmbiverseNLU) combines a
 number of state-of-the-art components for language understanding tasks: named
 entity recognition and disambiguation (or entity linking), open information
-extraction, entity salience estimation, and concept linking.
+extraction, entity salience estimation, and concept linking, providing a basis
+for text-to-knowledge applications.
 
 Take the example sentence below:
 
