@@ -248,6 +248,10 @@ KnowNER provides means to add new languages. Have a look at `docs/know-ner/new_c
 * AmbiverseNLU project website: [http://www.mpi-inf.mpg.de/ambiverse-nlu/](http://www.mpi-inf.mpg.de/ambiverse-nlu/)
 * [Build Status](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu): ![Build Status](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu.svg?branch=master)
 
+## Stay in Touch
+
+Sign up for the AmbiverseNLU mailing list: https://lists.mpi-inf.mpg.de/listinfo/ambiversenlu
+
 ## AmbiverseNLU License
 
 [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html)
