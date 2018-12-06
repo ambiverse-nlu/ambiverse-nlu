@@ -352,9 +352,9 @@ public class UimaCommandLineDisambiguator {
     List<EvaluationCounts> ecsnerNE_FP = new ArrayList<>();
     List<EvaluationCounts> ecsnerC_FP = new ArrayList<>();
 
-    logger.info("Processing output");
 
     //TODO This needs to be redone, quite messy at the moment
+    logger.info("Writing output to '" + outputDirectory + configFolder + "'.");
     for (ProcessedDocument pd : result) {
       AnalyzeOutput ao = OutputUtils.generateAnalyzeOutputfromProcessedDocument(pd);
       String resultString = OutputUtils.generateJSONStringfromAnalyzeOutput(ao);
