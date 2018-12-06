@@ -93,11 +93,13 @@ If you adapt `AIDA_CONF`, make sure that PostgreSQL backend started above uses t
 
 Adapt the database configuration as explained in the section above (Starting the Web Service).
 
-The main command line interface is `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.run.UimaCommandLineDisambiguator`. Example call using a script: 
+The main command line interface is `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.run.UimaCommandLineProcessor`. Example call using a script: 
 
 ```
 export AIDA_CONF=aida_20180120_cs_de_en_es_ru_zh_v18_db
-./scripts/driver/run_pipeline.sh -s "Albert Einstein was born in Ulm" -l "en" -pip "ENTITY_SALIENCE"
+mkdir nlu-input
+echo "Jack founded Alibaba with investments from SoftBank and Goldman." > nlu-input/doc.txt
+./scripts/driver/run_pipeline.sh -d nlu-input -i TEXT -l en -pip ENTITY_SALIENCE
 ```
 
 A list of existing pipelines can be found in `de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.uima.pipelines.PipelineType`, where you can also define new pipelines.

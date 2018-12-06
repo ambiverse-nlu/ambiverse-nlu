@@ -3,7 +3,7 @@ package de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.optimization;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.EntityLinkingManager;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.access.EntityLinkingDataAccessException;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.evaluation.Utils;
-import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.run.UimaCommandLineDisambiguator;
+import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.run.UimaCommandLineProcessor;
 import de.mpg.mpi_inf.ambiversenlu.nlu.tools.javatools.filehandlers.FileLines;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -136,7 +136,7 @@ public class AIDAOptimizable extends Optimizable {
     double result = 0;
     try {
       String[] args = createArgsForParams(currentConfig.getParameters());
-      new UimaCommandLineDisambiguator().run(args);
+      new UimaCommandLineProcessor().run(args);
       Map<String, Double> results = Utils.readResults(getCollectionDirectory());
       result = results.get("F1");
     } catch (Throwable throwable) {

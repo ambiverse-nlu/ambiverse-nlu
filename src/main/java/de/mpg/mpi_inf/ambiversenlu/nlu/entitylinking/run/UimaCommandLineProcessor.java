@@ -1,17 +1,14 @@
 package de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.run;
 
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.EntityLinkingManager;
-import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.access.EntityLinkingDataAccessException;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.config.ConfigUtils;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.config.settings.DisambiguationSettings;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.evaluation.EvaluationCounts;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.evaluation.EvaluationSettings;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.graph.similarity.EntityEntitySimilarityCombinationsIds;
-import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.graph.similarity.exception.MissingSettingException;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.processor.CollectionProcessor;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.processor.CollectionSettings;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.processor.DocumentProcessor;
-import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.processor.UnprocessableDocumentException;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.service.web.model.AnalyzeOutput;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.trace.GraphTracer;
 import de.mpg.mpi_inf.ambiversenlu.nlu.entitylinking.trace.visualization.model.EvaluationStats;
@@ -29,30 +26,25 @@ import de.mpg.mpi_inf.ambiversenlu.nlu.model.ProcessedDocument;
 import de.mpg.mpi_inf.ambiversenlu.nlu.ner.NERManager;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.io.FileUtils;
-import org.apache.uima.UIMAException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
- * Disambiguates a document from the command line.
+ * Processes a document from the command line.
  *
  */
-public class UimaCommandLineDisambiguator {
-
-  //-s "Einstein was born in Ulm." -l en -pip ENTITY_SALIENCE
-
-  private Logger logger = LoggerFactory.getLogger(UimaCommandLineDisambiguator.class);
+public class UimaCommandLineProcessor {
+  private Logger logger = LoggerFactory.getLogger(UimaCommandLineProcessor.class);
 
   public static void main(String[] args) throws Throwable {
     try {
-      new UimaCommandLineDisambiguator().run(args);
+      new UimaCommandLineProcessor().run(args);
     } catch (Throwable throwable) {
       throwable.printStackTrace();
     }
@@ -62,10 +54,6 @@ public class UimaCommandLineDisambiguator {
     Document.Builder builder;
 
     CommandLine cmd = new CommandLineUtils().parseCommandLineArgs(args);
-
-    if (cmd.hasOption("d") && cmd.hasOption("s")) {
-      throw new IllegalArgumentException("Either a directory (-d) or a sentence (-s) can be specified but not both");
-    }
 
     if (cmd.hasOption("z") && !cmd.hasOption("d")) {
       throw new IllegalArgumentException("A collection settings should be accompanied by a collection path");
@@ -82,7 +70,6 @@ public class UimaCommandLineDisambiguator {
         throw new IllegalArgumentException("The pipeline must exist in PipelineType.java");
       }
     }
-
     
     String inputDirectory = null;
     String reader;

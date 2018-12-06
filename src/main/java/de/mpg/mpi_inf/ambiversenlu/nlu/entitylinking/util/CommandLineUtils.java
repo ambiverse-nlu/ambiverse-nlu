@@ -7,19 +7,12 @@ import org.apache.commons.cli.ParseException;
 public class CommandLineUtils extends AbstractCommandLineUtils {
 
   public CommandLineUtils() {
-    super("AIDA", "CommandLineDisambiguator");
+    super("AmbiverseNLU", "CommandLineRunner");
   }
 
   @Override
   protected Options buildCommandLineOptions() throws ParseException {
     Options options = new Options();
-    options
-        .addOption(OptionBuilder
-            .withLongOpt("string")
-            .withDescription(
-                "An input sentence.")
-            .hasArg()
-            .create("s"));
     options
         .addOption(OptionBuilder
             .withLongOpt("directory")
