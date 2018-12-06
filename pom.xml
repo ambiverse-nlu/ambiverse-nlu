@@ -813,8 +813,12 @@
             <version>19.0-rc2</version>
         </dependency>
     </dependencies>
-    <!-- DKPro repositories -->
     <repositories>
+        <repository>
+            <id>maven-central</id>
+            <url>http://repo1.maven.org/maven2/</url>
+        </repository>
+        <!-- DKPro repositories -->
         <repository>
             <id>ukp-oss</id>
             <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases</url>
