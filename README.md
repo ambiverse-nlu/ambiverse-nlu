@@ -2,6 +2,10 @@ Try the [demo](http://ambiversenlu.mpi-inf.mpg.de) at http://ambiversenlu.mpi-in
 
 # Ambiverse Natural Language Understanding - AmbiverseNLU
 
+[![Build Status](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu.svg?branch=master)](https://travis-ci.org/ambiverse-nlu/ambiverse-nlu.svg?branch=master)
+[![DockerHub](https://img.shields.io/badge/docker-available-blue.svg?logo=docker)](https://hub.docker.com/r/ambiverse/ambiverse-nlu)
+[![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 The multilingual Ambiverse Natural Language Understanding suite (AmbiverseNLU) combines a
 number of state-of-the-art components for language understanding tasks: named
 entity recognition and disambiguation (or entity linking), open information
