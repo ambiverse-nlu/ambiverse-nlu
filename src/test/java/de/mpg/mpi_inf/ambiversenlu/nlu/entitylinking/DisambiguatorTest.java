@@ -40,14 +40,12 @@ public class DisambiguatorTest {
     String text = "When Page played Kashmir at Knebworth, his Les Paul was uniquely tuned.";
     Document.Builder dbuilder = new Document.Builder();
     dbuilder.withText(text).withDisambiguationSettings(new DisambiguationSettings.Builder().build());
-    dbuilder.withText(text).withDisambiguationSettings(new DisambiguationSettings.Builder().build());
     DocumentAnnotations annotations = new DocumentAnnotations();
     annotations.addMention(5,4);
     dbuilder.withAnnotations(annotations);
     Document doc = dbuilder.build();
 
     DocumentProcessor dp = DocumentProcessor.getInstance(PipelineType.DISAMBIGUATION_STANFORD);
-
 
     DisambiguationSettings settings = doc.getDisambiguationSettings();
 
