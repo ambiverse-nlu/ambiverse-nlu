@@ -5,6 +5,12 @@ services:
   db:
     image: ambiverse/nlu-db-cassandra
     restart: always
+    ports:
+      - 7000:7000 
+      - 7001:7001 
+      - 9042:9042 
+      - 7199:7199
+      - 9160:9160
     environment:
       DATABASE_NAME: aida_20180120_cs_de_en_es_ru_zh_v18
 
