@@ -30,7 +30,7 @@ Quickly play with AmbiverseNLU without installing anything: [demo](http://ambive
 
 ### Call the Web Service using Docker
 
-Starting the AmbiverseNLU as web service (with PostgreSQL backend) using Docker is simple, using docker-compose:
+Starting the AmbiverseNLU as web service (with PostgreSQL backend) using Docker is simple, using docker-compose (note that this can take a couple of hours to come up while the database is being populated):
 
 ~~~~~~~~~~~~
 docker-compose -f docker-compose/service-postgres.yml up
@@ -58,7 +58,7 @@ You can run AmbiverseNLU with different databases as backend, or also start the 
 
 ### Start the Database Backend
 
-Start the PostgreSQL backend with the fully multilingual knowledge graph:
+Start the PostgreSQL backend with the fully multilingual knowledge graph (note that this can take a couple of hours to come up while the database is being populated):
 ~~~~~~~~~~~~
 docker run -d --name nlu-db-postgres \
   -p 5432:5432 \
@@ -185,6 +185,10 @@ To be on the safe side, plan 8 GB of main memory per document.
 This means that if you want to disambiguate one document at a time, you need at least 16 GB
 of main memory. If you want to disambiguate 4 documents in parallel, you should be using
 40 GB.
+
+### Disk Space
+
+The full AmbiverseNLU database, aida_20180120_cs_de_en_es_ru_zh_v18_db, requires 387 GB disk space.
 
 ### Throughput Analysis
 
