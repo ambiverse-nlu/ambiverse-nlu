@@ -270,7 +270,6 @@ Sign up for the AmbiverseNLU mailing list: Visit https://lists.mpi-inf.mpg.de/li
 
 Current Maintainers (in alphabetical order):
 
-* Dragan Milchevski
 * Ghazale Haratinezhad Torbati
 * Johannes Hoffart
 * Luciano Del Corro
@@ -282,7 +281,7 @@ Contributors (in alphabetical order):
 * Dat Ba Nguyen
 * Diego Ceccarelli 
 * Dominic Seyler
-* Dragan Milchevski
+* Dragan Milchevski (former maintainer)
 * Felix Keller
 * Ghazale Haratinezhad Torbati
 * Ilaria Bordino
