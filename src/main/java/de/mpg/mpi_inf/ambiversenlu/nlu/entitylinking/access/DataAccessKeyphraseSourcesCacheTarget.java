@@ -11,12 +11,16 @@ public class DataAccessKeyphraseSourcesCacheTarget extends DataAccessCacheTarget
 
   private TObjectIntHashMap<String> data_;
 
+  public DataAccessKeyphraseSourcesCacheTarget(String path) {
+    super(path);
+  }
+
   @Override public String getId() {
     return ID;
   }
 
   @Override protected File getCacheFile() {
-    return new File("aida-keyphrase_sources.cache");
+    return new File(path + "/" + "aida-keyphrase_sources.cache");
   }
 
   @Override protected void loadFromDb() throws EntityLinkingDataAccessException {

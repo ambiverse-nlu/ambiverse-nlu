@@ -15,6 +15,10 @@ public class DataAccessEntitiesCacheTarget extends DataAccessCacheTarget {
   
   private TIntObjectHashMap<EntityType> data_;
 
+  public DataAccessEntitiesCacheTarget(String path) {
+    super(path);
+  }
+
   @Override
   public String getId() {
     return ID;
@@ -22,7 +26,7 @@ public class DataAccessEntitiesCacheTarget extends DataAccessCacheTarget {
 
   @Override
   protected File getCacheFile() {
-    return new File("aida-entity_classes.cache");
+    return new File(path + "/" + "aida-entity_classes.cache");
   }
 
   @Override

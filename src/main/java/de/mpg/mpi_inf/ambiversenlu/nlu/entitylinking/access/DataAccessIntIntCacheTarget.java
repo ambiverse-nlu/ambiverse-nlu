@@ -13,6 +13,10 @@ public abstract class DataAccessIntIntCacheTarget extends DataAccessCacheTarget 
 
   protected int[] data_;
 
+  public DataAccessIntIntCacheTarget(String path) {
+    super(path);
+  }
+
   public abstract String getId();
 
   protected abstract File getCacheFile();
