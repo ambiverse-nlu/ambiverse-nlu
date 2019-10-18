@@ -11,9 +11,15 @@ public abstract class DataAccessCacheTarget {
 
   private Logger logger_ = LoggerFactory.getLogger(DataAccessCacheTarget.class);
 
+  protected String path;
+
   public abstract String getId();
 
   protected abstract File getCacheFile();
+
+  public DataAccessCacheTarget(String path) {
+      this.path = path;
+  }
 
   public void createAndLoadCache(boolean needsCacheCreation) throws FileNotFoundException, IOException, EntityLinkingDataAccessException {
     boolean requireReadFromDB = false;

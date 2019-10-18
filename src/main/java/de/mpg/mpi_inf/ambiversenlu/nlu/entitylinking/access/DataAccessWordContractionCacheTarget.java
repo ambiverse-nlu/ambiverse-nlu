@@ -6,12 +6,16 @@ public class DataAccessWordContractionCacheTarget extends DataAccessIntIntCacheT
 
   public static final String ID = "WORD_CONTRACTION";
 
+  public DataAccessWordContractionCacheTarget(String path) {
+    super(path);
+  }
+
   @Override public String getId() {
     return ID;
   }
 
   @Override protected File getCacheFile() {
-    return new File("aida-word_contractions.cache");
+    return new File(path + "/" + "aida-word_contractions.cache");
   }
 
   @Override protected void loadFromDb() throws EntityLinkingDataAccessException {

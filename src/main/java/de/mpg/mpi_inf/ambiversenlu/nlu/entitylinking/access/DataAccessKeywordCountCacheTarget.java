@@ -6,12 +6,16 @@ public class DataAccessKeywordCountCacheTarget extends DataAccessIntIntCacheTarg
 
   public static final String ID = "KEYWORD_COUNT";
 
+  public DataAccessKeywordCountCacheTarget(String path) {
+    super(path);
+  }
+
   @Override public String getId() {
     return ID;
   }
 
   @Override protected File getCacheFile() {
-    return new File("aida-keyword_count.cache");
+    return new File(path + "/" + "aida-keyword_count.cache");
   }
 
   @Override protected void loadFromDb() throws EntityLinkingDataAccessException {

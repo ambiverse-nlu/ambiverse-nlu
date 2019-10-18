@@ -12,10 +12,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.attribute.FileAttribute;
+import java.nio.file.attribute.PosixFilePermission;
+import java.nio.file.attribute.PosixFilePermissions;
+import java.util.*;
 
 public class DataAccessCache {
 
@@ -56,24 +58,37 @@ public class DataAccessCache {
   }
 
   private  DataAccessCache() throws EntityLinkingDataAccessException {
+
+    String cachePath = "caches/" + EntityLinkingConfig.confDir;
+
+    if(!Files.exists(Paths.get(cachePath))) {
+      try {
+        logger.info("Cache directory does not exist. Creating '{}' directory.", cachePath);
+        Files.createDirectories(Paths.get(cachePath));
+      } catch (IOException e) {
+        logger.error(e.getMessage());
+        throw new EntityLinkingDataAccessException(e.getMessage());
+      }
+    }
+
     List<DataAccessCacheTarget> cacheTargets = new ArrayList<>();
-    wordExpansion = new DataAccessWordExpansionCacheTarget();
+    wordExpansion = new DataAccessWordExpansionCacheTarget(cachePath);
     cacheTargets.add(wordExpansion);
-    wordContraction = new DataAccessWordContractionCacheTarget();
+    wordContraction = new DataAccessWordContractionCacheTarget(cachePath);
     cacheTargets.add(wordContraction);
     unitCounts = new DataAccessUnitCountCacheTarget[UnitType.values().length];
     for (UnitType unitType : UnitType.values()) {
-      DataAccessUnitCountCacheTarget target = new DataAccessUnitCountCacheTarget(unitType);
+      DataAccessUnitCountCacheTarget target = new DataAccessUnitCountCacheTarget(unitType, cachePath);
       unitCounts[unitType.ordinal()] = target;
       cacheTargets.add(target);
     }
-    keyphraseTokens = new DataAccessKeyphraseTokensCacheTarget();
-    keyphraseSources = new DataAccessKeyphraseSourcesCacheTarget();
+    keyphraseTokens = new DataAccessKeyphraseTokensCacheTarget(cachePath);
+    keyphraseSources = new DataAccessKeyphraseSourcesCacheTarget(cachePath);
     if (EntityLinkingConfig.getBoolean(EntityLinkingConfig.DATAACCESS_CACHE_KEYPHRASES_ENABLE)) {
       cacheTargets.add(keyphraseTokens);
       cacheTargets.add(keyphraseSources);
     }
-    entities = new DataAccessEntitiesCacheTarget();
+    entities = new DataAccessEntitiesCacheTarget(cachePath);
     cacheTargets.add(entities);
     
     logger.info("Loading local db caches.");
@@ -108,11 +123,11 @@ public class DataAccessCache {
             case testing:
             case sql:
               currentConfig = ConfigUtils.loadProperties(EntityLinkingManager.databaseAidaConfig);
-              cachedConfigFile = new File(DATABASE_AIDA_CONFIG_CACHE);
+              cachedConfigFile = new File(cachePath + "/" + DATABASE_AIDA_CONFIG_CACHE);
               break;
             case cassandra:
               currentConfig = ConfigUtils.loadProperties(CassandraConfig.FILE_NAME);
-              cachedConfigFile = new File(CASSANDRA_CONFIG_CACHE);
+              cachedConfigFile = new File(cachePath + "/" + CASSANDRA_CONFIG_CACHE);
               break;
 
           }
@@ -136,10 +151,11 @@ public class DataAccessCache {
 
   private boolean determineCacheCreation() throws IOException {
     File cachedDBConfigFile, cachedCassandraConfigFile;
+    String cachePath = "caches/" +EntityLinkingConfig.confDir;
 
     List<File> allCacheFiles = Arrays
-        .asList(cachedDBConfigFile = new File(DATABASE_AIDA_CONFIG_CACHE),
-                cachedCassandraConfigFile = new File(CASSANDRA_CONFIG_CACHE));
+        .asList(cachedDBConfigFile = new File(cachePath + "/" + DATABASE_AIDA_CONFIG_CACHE),
+                cachedCassandraConfigFile = new File(cachePath + "/" + CASSANDRA_CONFIG_CACHE));
 
     logger.debug("Determining the cache creation...");
     logger.debug("Cassandra Config file {}.", cachedCassandraConfigFile.getName());

@@ -6,12 +6,16 @@ public class DataAccessWordExpansionCacheTarget extends DataAccessIntIntCacheTar
 
   public static final String ID = "WORD_EXPANSION";
 
-  @Override public String getId() {
+    public DataAccessWordExpansionCacheTarget(String path) {
+        super(path);
+    }
+
+    @Override public String getId() {
     return ID;
   }
 
   @Override protected File getCacheFile() {
-    return new File("aida-word_expansions.cache");
+    return new File(path + "/" + "aida-word_expansions.cache");
   }
 
   @Override protected void loadFromDb() throws EntityLinkingDataAccessException {
