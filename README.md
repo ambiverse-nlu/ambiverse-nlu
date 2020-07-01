@@ -62,7 +62,7 @@ Start the PostgreSQL backend with the fully multilingual knowledge graph (note t
 ~~~~~~~~~~~~
 docker run -d --name nlu-db-postgres \
   -p 5432:5432 \
-  -e POSTGRES_DB=aida_20180120_cs_de_en_es_ru_zh_v18_db \
+  -e POSTGRES_DB=aida_20180120_cs_de_en_es_ru_zh_v18 \
   -e POSTGRES_USER=ambiversenlu \
   -e POSTGRES_PASSWORD=ambiversenlu \
   ambiverse/nlu-db-postgres
@@ -72,7 +72,7 @@ If you have less than 32 GB of main memory, you can also start a PostgreSQL back
 ~~~~~~~~~~~~
 docker run -d --name nlu-db-postgres \
   -p 5432:5432 \
-  -e POSTGRES_DB=aida_20180120_b3_de_en_v18_db \
+  -e POSTGRES_DB=aida_20180120_b3_de_en_v18 \
   -e POSTGRES_USER=ambiversenlu \
   -e POSTGRES_PASSWORD=ambiversenlu \
   ambiverse/nlu-db-postgres
