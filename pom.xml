@@ -58,7 +58,7 @@
         <javax-servlet.version>3.1.0</javax-servlet.version>
         <jetty.version>9.4.4.v20170414</jetty.version>
         <java.version>1.8</java.version>
-        <corenlp.version>3.9.1</corenlp.version>
+        <corenlp.version>4.4.0</corenlp.version>
         <uima-fit.version>2.4.0</uima-fit.version>
         <dkpro.version>1.10.0</dkpro.version>
         <dkpro-tc.version>0.9.0</dkpro-tc.version>
