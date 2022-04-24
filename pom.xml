@@ -176,7 +176,7 @@
                         <exclude>**/*IT.java</exclude>
                         <exclude>**/*IntegrationTest.java</exclude>
                     </excludes>
-                    <forkCount>1</forkCount> <!-- Higher fork counts led to unstable builds (i.e. failed test cases) -->
+                    <forkCount>1.5C</forkCount> <!-- Higher fork counts led to unstable builds (i.e. failed test cases) -->
                     <forkedProcessTimeoutInSeconds>3600</forkedProcessTimeoutInSeconds>
                     <reuseForks>false</reuseForks>
                     <argLine>-Xmx16G</argLine>
