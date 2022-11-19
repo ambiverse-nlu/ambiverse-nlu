@@ -9,6 +9,7 @@ import org.junit.Test;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static org.junit.Assert.assertEquals;
@@ -25,7 +26,7 @@ public class PreparedInputTest {
     
     PreparedInput prep = new PreparedInput(orig);
     
-    File tmpFile = File.createTempFile("test", "tmp");
+    File tmpFile = Files.createTempFile("test", "tmp").toFile();
     tmpFile.deleteOnExit();
     
     prep.writeTo(tmpFile);
