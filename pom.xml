@@ -816,16 +816,16 @@
     <repositories>
         <repository>
             <id>maven-central</id>
-            <url>http://repo1.maven.org/maven2/</url>
+            <url>https://repo1.maven.org/maven2/</url>
         </repository>
         <!-- DKPro repositories -->
         <repository>
             <id>ukp-oss</id>
-            <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases</url>
+            <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-releases</url>
         </repository>
         <repository>
             <id>ukp-oss-snapshots</id>
-            <url>http://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-ukp-snapshots-local/</url>
+            <url>https://zoidberg.ukp.informatik.tu-darmstadt.de/artifactory/public-ukp-snapshots-local/</url>
         </repository>
     </repositories>
 
