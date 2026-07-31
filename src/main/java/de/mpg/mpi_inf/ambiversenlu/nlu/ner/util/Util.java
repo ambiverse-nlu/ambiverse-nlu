@@ -24,6 +24,9 @@ public class Util {
 
             @Override
             public FileVisitResult postVisitDirectory(Path dir, IOException exc) throws IOException {
+                if (exc != null) {
+                    throw exc;
+                }
                 if (exceptFileNames == null) {
                     Files.delete(dir);
                 }
@@ -33,13 +36,19 @@ public class Util {
     }
 
     public static void copyDir(final Path path, Path sourceDir) throws IOException {
-        Files.createDirectory(path);
+        Files.createDirectories(path);
         Files.walkFileTree(sourceDir, new SimpleFileVisitor<Path>() {
             @Override
+            public FileVisitResult preVisitDirectory(Path dir, BasicFileAttributes attrs) throws IOException {
+                Files.createDirectories(path.resolve(sourceDir.relativize(dir)));
+                return FileVisitResult.CONTINUE;
+            }
+
+            @Override
             public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
-                Path target = Paths.get(path.toString(), file.getFileName().toString());
+                Path target = path.resolve(sourceDir.relativize(file));
                 Files.copy(file, target);
-                return super.visitFile(file, attrs);
+                return FileVisitResult.CONTINUE;
             }
         });
     }
